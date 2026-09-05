@@ -1,0 +1,501 @@
+project_id,developer_id,locality_id,project_name,project_type,launch_date,completion_date,total_units,units_sold,units_available,project_status
+1,39,59,Gala Greens,Residential,2025-08-06,2027-11-22,510,312,198,Nearing Completion
+2,13,49,Ramakrishnan Towers,Residential,2022-09-19,2025-10-11,77,53,24,Completed
+3,10,84,Sha Towers,Residential,2022-02-02,2025-03-18,305,239,66,Completed
+4,20,15,Sur Enclave,Residential,2022-03-15,2023-04-10,52,49,3,Nearing Completion
+5,23,41,Minhas Meadows,Residential,2021-06-25,2023-03-28,40,33,7,Completed
+6,37,54,Bhardwaj Greens,Residential,2021-10-30,2023-04-27,485,347,138,Nearing Completion
+7,25,14,Bhat Greens,Residential,2023-10-26,2027-02-18,168,145,23,Under Construction
+8,7,36,Bhandari Residency,Residential,2024-09-29,2026-07-26,591,551,40,Completed
+9,15,87,Sood Heights,Mixed-Use,2020-11-27,2024-02-21,152,124,28,Completed
+10,29,77,Wali Residency,Residential,2023-05-26,2027-04-20,143,104,39,Under Construction
+11,26,47,Trivedi Heights,Residential,2021-07-01,2023-11-09,336,317,19,Completed
+12,22,32,Grewal Residency,Residential,2021-01-26,2023-07-07,105,77,28,Under Construction
+13,40,34,Bir Greens,Residential,2021-01-03,2023-09-06,166,140,26,Completed
+14,25,3,Keer Greens,Residential,2024-05-06,2026-04-10,294,235,59,Under Construction
+15,39,77,Koshy Residency,Villa Community,2022-11-08,2025-04-16,376,298,78,Nearing Completion
+16,17,14,Baral Residency,Residential,2023-10-26,2026-12-27,459,273,186,Nearing Completion
+17,5,63,Saini Heights,Mixed-Use,2024-01-15,2025-06-19,319,295,24,Nearing Completion
+18,2,24,Virk Residency,Residential,2024-03-31,2025-06-18,339,309,30,Under Construction
+19,4,84,Lal Enclave,Residential,2022-05-16,2023-08-10,262,174,88,Nearing Completion
+20,15,54,Murthy Towers,Residential,2021-10-03,2022-11-17,415,289,126,Nearing Completion
+21,35,70,Randhawa Meadows,Mixed-Use,2021-12-11,2024-09-22,385,246,139,Completed
+22,29,23,Mital Towers,Residential,2021-05-08,2024-10-01,230,188,42,Completed
+23,14,27,Bora Vista,Residential,2023-02-23,2025-10-20,374,247,127,Completed
+24,8,49,Chaudhry Vista,Residential,2020-09-06,2021-12-04,73,69,4,Completed
+25,1,7,Kala Greens,Mixed-Use,2021-01-13,2023-11-18,224,221,3,Completed
+26,24,19,Deo Heights,Residential,2023-06-01,2025-11-27,351,248,103,Under Construction
+27,38,67,Biswas Greens,Residential,2025-10-06,2028-05-22,316,244,72,Under Construction
+28,23,30,Pingle Enclave,Villa Community,2025-06-20,2027-03-29,299,235,64,Completed
+29,4,62,Sarma Meadows,Residential,2022-03-14,2025-09-25,392,318,74,Nearing Completion
+30,13,57,Mittal Greens,Residential,2025-03-20,2027-12-13,285,235,50,Completed
+31,6,51,Wadhwa Towers,Residential,2023-12-30,2026-10-14,484,367,117,Completed
+32,40,49,Mistry Meadows,Villa Community,2020-09-03,2023-11-14,113,69,44,Under Construction
+33,21,7,Chawla Greens,Residential,2025-10-03,2027-06-20,583,534,49,Under Construction
+34,17,16,Desai Vista,Residential,2025-10-18,2028-01-04,372,247,125,Completed
+35,26,36,Chhabra Meadows,Residential,2022-02-01,2023-07-30,259,201,58,Nearing Completion
+36,28,35,Dugal Towers,Residential,2024-09-18,2027-01-27,172,168,4,Under Construction
+37,5,56,Kade Towers,Villa Community,2022-02-17,2024-06-22,414,322,92,Under Construction
+38,28,51,Jani Towers,Residential,2024-07-30,2026-08-27,252,187,65,Completed
+39,25,39,Lalla Vista,Residential,2024-05-31,2026-11-01,512,461,51,Completed
+40,35,28,Krishnamurthy Residency,Residential,2023-05-31,2024-07-06,592,574,18,Nearing Completion
+41,36,82,Behl Greens,Residential,2025-08-11,2026-09-23,108,87,21,Completed
+42,11,41,Sampath Heights,Villa Community,2021-02-20,2024-03-14,262,215,47,Under Construction
+43,12,62,Basu Vista,Residential,2025-03-12,2029-01-17,397,334,63,Under Construction
+44,24,90,De Enclave,Residential,2020-08-26,2023-03-31,110,88,22,Completed
+45,11,85,Lala Greens,Villa Community,2024-02-19,2025-09-27,417,337,80,Under Construction
+46,13,30,Sathe Towers,Residential,2021-07-09,2024-07-02,588,574,14,Completed
+47,19,67,Sane Residency,Residential,2023-09-01,2026-07-08,526,419,107,Completed
+48,5,25,Choudhury Greens,Residential,2023-09-19,2025-05-12,408,301,107,Completed
+49,7,24,Dixit Residency,Residential,2021-01-17,2023-02-02,129,94,35,Nearing Completion
+50,38,38,Pingle Residency,Residential,2023-08-20,2026-12-23,357,304,53,Completed
+51,2,83,Divan Greens,Mixed-Use,2023-11-02,2027-02-16,558,516,42,Completed
+52,34,3,Barman Enclave,Residential,2022-12-30,2026-06-12,107,91,16,Under Construction
+53,12,87,Baral Greens,Residential,2022-04-30,2025-03-20,381,234,147,Under Construction
+54,18,39,Kade Heights,Residential,2025-07-29,2027-09-10,167,143,24,Under Construction
+55,38,23,Chauhan Heights,Residential,2024-05-20,2027-04-23,465,460,5,Under Construction
+56,36,50,Ray Heights,Residential,2022-07-30,2024-08-06,252,175,77,Under Construction
+57,24,18,Dubey Meadows,Villa Community,2025-12-27,2028-05-31,260,238,22,Under Construction
+58,33,86,Khalsa Vista,Residential,2025-09-21,2027-04-23,44,37,7,Nearing Completion
+59,8,79,Goel Towers,Residential,2025-05-21,2028-05-06,252,204,48,Completed
+60,28,5,Bakshi Towers,Villa Community,2025-06-24,2027-04-01,199,141,58,Completed
+61,34,25,Natarajan Greens,Residential,2021-08-14,2024-05-11,90,65,25,Under Construction
+62,36,85,Sabharwal Heights,Mixed-Use,2024-12-07,2026-06-23,421,398,23,Under Construction
+63,38,3,Kothari Enclave,Residential,2025-01-16,2026-12-05,484,353,131,Under Construction
+64,27,76,Chokshi Vista,Residential,2022-02-06,2024-12-30,572,381,191,Completed
+65,38,36,Barad Residency,Mixed-Use,2022-09-26,2025-07-06,484,335,149,Nearing Completion
+66,1,47,Kapadia Greens,Residential,2025-05-09,2027-05-30,172,159,13,Completed
+67,29,12,Sharma Heights,Residential,2021-09-23,2025-04-12,415,310,105,Completed
+68,7,88,Kari Heights,Residential,2022-07-22,2024-01-21,452,437,15,Completed
+69,4,32,Hans Towers,Residential,2021-11-09,2023-05-23,214,131,83,Under Construction
+70,40,81,Mallick Heights,Residential,2022-10-28,2025-08-08,318,221,97,Completed
+71,31,32,Mallick Towers,Villa Community,2025-05-21,2028-05-30,287,282,5,Under Construction
+72,5,71,Upadhyay Heights,Villa Community,2022-07-25,2023-11-16,445,314,131,Completed
+73,15,15,Yadav Residency,Residential,2022-10-30,2024-08-15,401,249,152,Under Construction
+74,14,71,Bala Heights,Residential,2022-06-15,2023-08-30,330,261,69,Under Construction
+75,31,22,Lal Meadows,Residential,2021-04-07,2024-03-07,191,188,3,Under Construction
+76,21,20,Lanka Heights,Residential,2021-08-12,2024-08-14,596,566,30,Nearing Completion
+77,2,63,Saraf Greens,Residential,2020-11-03,2023-03-06,226,167,59,Completed
+78,1,65,Murthy Enclave,Residential,2022-07-14,2024-02-19,340,282,58,Nearing Completion
+79,36,84,Vaidya Enclave,Residential,2023-01-12,2024-01-13,208,145,63,Under Construction
+80,21,58,Gupta Meadows,Residential,2021-04-08,2022-09-21,595,520,75,Completed
+81,38,80,Sarin Greens,Mixed-Use,2022-01-12,2023-04-23,183,151,32,Completed
+82,9,36,Yohannan Residency,Residential,2020-08-22,2023-10-07,60,52,8,Under Construction
+83,8,13,Hegde Towers,Residential,2024-05-29,2026-07-20,233,193,40,Completed
+84,28,88,Boase Towers,Mixed-Use,2022-08-20,2025-06-07,328,227,101,Completed
+85,2,73,Narayanan Enclave,Mixed-Use,2025-11-07,2028-07-19,258,139,119,Under Construction
+86,29,80,Dash Enclave,Residential,2024-01-22,2027-09-09,526,381,145,Under Construction
+87,26,57,Mital Heights,Residential,2024-08-03,2028-01-16,220,206,14,Nearing Completion
+88,34,34,Rege Enclave,Mixed-Use,2023-06-03,2027-03-09,312,272,40,Nearing Completion
+89,36,84,Merchant Heights,Residential,2022-06-05,2024-05-17,573,431,142,Under Construction
+90,8,87,Handa Meadows,Mixed-Use,2023-09-06,2025-01-31,579,535,44,Under Construction
+91,1,56,Raghavan Vista,Residential,2022-12-11,2025-09-21,564,484,80,Under Construction
+92,4,54,Ghosh Towers,Residential,2024-05-10,2027-03-19,404,312,92,Completed
+93,33,28,Mitra Vista,Residential,2024-01-07,2025-08-04,158,156,2,Nearing Completion
+94,9,70,Acharya Residency,Mixed-Use,2022-11-12,2024-07-30,119,97,22,Under Construction
+95,8,86,Kade Residency,Residential,2022-04-21,2023-11-01,427,404,23,Under Construction
+96,13,18,Nagy Enclave,Residential,2022-12-30,2024-07-07,407,376,31,Under Construction
+97,35,69,Sathe Meadows,Residential,2023-03-11,2026-11-05,291,208,83,Under Construction
+98,3,38,Vaidya Vista,Residential,2024-05-07,2026-07-04,579,391,188,Completed
+99,25,71,Gara Vista,Residential,2023-03-27,2024-04-16,185,145,40,Under Construction
+100,20,58,Mander Greens,Mixed-Use,2024-04-03,2027-10-03,392,298,94,Nearing Completion
+101,22,51,Nayak Meadows,Residential,2023-06-20,2025-12-05,101,58,43,Under Construction
+102,37,12,Keer Meadows,Residential,2021-02-22,2022-07-11,524,518,6,Nearing Completion
+103,27,50,Kar Residency,Villa Community,2024-05-01,2027-03-04,521,362,159,Completed
+104,9,28,Din Meadows,Residential,2025-01-25,2027-01-05,425,366,59,Under Construction
+105,23,14,Konda Vista,Residential,2020-10-07,2024-07-21,181,155,26,Nearing Completion
+106,23,63,Bora Meadows,Residential,2026-01-16,2028-12-13,383,344,39,Nearing Completion
+107,2,40,Hayer Residency,Residential,2023-02-19,2024-06-13,593,464,129,Completed
+108,38,3,Rajagopalan Residency,Villa Community,2024-08-01,2027-12-27,99,79,20,Completed
+109,30,57,Kohli Vista,Mixed-Use,2023-05-09,2025-05-29,206,193,13,Under Construction
+110,33,23,Ahluwalia Enclave,Mixed-Use,2021-06-11,2023-09-05,347,275,72,Under Construction
+111,40,16,Chhabra Heights,Residential,2025-07-17,2026-08-08,86,67,19,Under Construction
+112,12,34,Kanda Residency,Residential,2024-11-29,2026-09-04,185,180,5,Completed
+113,16,36,Vasa Heights,Residential,2021-08-07,2022-09-21,582,392,190,Completed
+114,38,26,Krish Meadows,Residential,2023-03-10,2026-06-06,494,442,52,Under Construction
+115,10,40,Dara Enclave,Residential,2025-09-05,2027-01-04,375,332,43,Completed
+116,11,61,Shetty Greens,Residential,2023-02-22,2026-12-20,174,126,48,Completed
+117,24,19,Nadig Vista,Mixed-Use,2024-04-21,2025-05-04,595,361,234,Nearing Completion
+118,23,14,Savant Greens,Villa Community,2025-11-09,2027-08-12,462,423,39,Completed
+119,11,10,Thaman Enclave,Villa Community,2024-01-01,2026-09-02,141,112,29,Nearing Completion
+120,21,32,Sehgal Greens,Residential,2022-12-24,2024-02-09,132,109,23,Under Construction
+121,16,48,Soman Enclave,Residential,2025-07-26,2029-06-16,313,215,98,Completed
+122,22,5,Kota Towers,Residential,2023-02-09,2025-08-18,206,140,66,Under Construction
+123,21,61,Malhotra Heights,Residential,2025-04-02,2027-12-25,531,391,140,Under Construction
+124,29,14,Verma Towers,Residential,2024-11-04,2028-01-08,595,387,208,Nearing Completion
+125,34,75,Khare Towers,Residential,2023-04-19,2024-11-27,350,314,36,Under Construction
+126,26,47,Brahmbhatt Heights,Mixed-Use,2022-02-21,2024-10-02,333,329,4,Under Construction
+127,34,48,Keer Towers,Mixed-Use,2024-07-22,2027-10-16,153,128,25,Nearing Completion
+128,16,86,Nagarajan Heights,Residential,2022-02-15,2024-07-13,321,232,89,Completed
+129,8,51,Buch Greens,Residential,2025-07-18,2028-09-15,536,361,175,Under Construction
+130,11,57,Kashyap Meadows,Mixed-Use,2021-05-23,2022-06-23,133,126,7,Under Construction
+131,2,11,Dua Heights,Residential,2022-09-27,2025-07-02,309,224,85,Completed
+132,12,37,Bhatt Heights,Residential,2024-07-08,2027-04-29,418,357,61,Under Construction
+133,32,74,Narayanan Meadows,Mixed-Use,2022-11-30,2024-11-16,396,330,66,Completed
+134,32,54,Sagar Greens,Residential,2023-08-14,2026-12-24,329,247,82,Under Construction
+135,26,35,Salvi Towers,Mixed-Use,2020-12-22,2023-04-11,89,85,4,Completed
+136,16,20,Bahri Enclave,Residential,2022-10-10,2024-09-01,137,78,59,Completed
+137,27,26,Rai Residency,Villa Community,2025-05-06,2026-09-12,269,184,85,Under Construction
+138,19,44,Pandey Towers,Residential,2023-04-04,2025-12-13,588,561,27,Under Construction
+139,18,17,Ramakrishnan Greens,Residential,2022-04-10,2025-10-06,192,110,82,Nearing Completion
+140,12,2,Saini Greens,Residential,2025-04-29,2026-12-31,251,211,40,Completed
+141,17,11,Kannan Vista,Residential,2023-08-05,2027-05-27,435,287,148,Completed
+142,28,31,Mahajan Enclave,Residential,2023-04-26,2026-07-02,468,399,69,Under Construction
+143,33,49,Balakrishnan Meadows,Residential,2023-01-11,2025-03-22,556,437,119,Under Construction
+144,8,83,Ravel Enclave,Residential,2022-10-09,2024-08-05,194,163,31,Under Construction
+145,14,71,Sibal Meadows,Residential,2024-08-12,2027-11-21,291,168,123,Completed
+146,30,83,Walla Towers,Residential,2025-09-09,2027-09-22,216,184,32,Nearing Completion
+147,14,7,Ramesh Vista,Residential,2020-10-12,2021-11-04,411,277,134,Nearing Completion
+148,1,83,Bala Greens,Villa Community,2023-11-21,2027-04-01,389,366,23,Under Construction
+149,1,78,Sangha Residency,Villa Community,2021-02-03,2024-01-20,150,109,41,Nearing Completion
+150,32,9,Shenoy Greens,Residential,2021-05-18,2022-12-04,52,51,1,Under Construction
+151,11,49,Lad Heights,Residential,2021-08-19,2025-03-07,354,246,108,Completed
+152,35,22,Kakar Heights,Residential,2022-09-19,2026-02-01,347,273,74,Completed
+153,10,26,Nazareth Towers,Residential,2023-02-18,2025-08-01,132,114,18,Completed
+154,9,6,Raghavan Meadows,Residential,2024-10-26,2026-01-02,327,323,4,Nearing Completion
+155,40,21,Sama Heights,Residential,2022-03-01,2025-07-17,318,271,47,Completed
+156,9,74,Bumb Greens,Residential,2022-01-07,2024-07-28,154,116,38,Under Construction
+157,16,59,Zacharia Residency,Residential,2023-03-21,2024-12-24,570,491,79,Under Construction
+158,23,71,Palla Residency,Residential,2020-12-01,2023-04-23,549,471,78,Completed
+159,17,76,Biswas Greens,Villa Community,2021-11-12,2023-12-24,292,190,102,Under Construction
+160,35,75,Baria Meadows,Mixed-Use,2024-12-05,2027-07-01,200,149,51,Under Construction
+161,15,26,Kota Enclave,Mixed-Use,2024-10-12,2026-09-19,399,211,188,Under Construction
+162,10,1,Bahri Heights,Residential,2021-09-23,2025-04-18,547,530,17,Completed
+163,40,55,Khare Towers,Residential,2024-01-19,2026-11-03,58,51,7,Completed
+164,35,88,Contractor Residency,Mixed-Use,2021-04-29,2025-03-23,519,370,149,Completed
+165,24,7,Kamdar Enclave,Villa Community,2023-09-26,2027-08-20,273,174,99,Completed
+166,2,44,Kunda Towers,Residential,2023-03-11,2024-07-30,424,372,52,Completed
+167,6,87,Ganesh Greens,Residential,2024-11-06,2028-07-07,84,62,22,Nearing Completion
+168,1,73,Contractor Residency,Residential,2023-12-19,2025-04-18,465,421,44,Nearing Completion
+169,37,67,Gade Meadows,Residential,2024-11-28,2027-04-14,240,230,10,Under Construction
+170,40,51,Chokshi Residency,Residential,2025-12-09,2027-04-11,88,69,19,Under Construction
+171,17,65,Muni Enclave,Residential,2023-10-25,2025-11-08,292,223,69,Nearing Completion
+172,18,59,Prashad Residency,Residential,2023-10-19,2027-04-29,182,157,25,Completed
+173,2,2,Issac Vista,Residential,2022-10-24,2024-10-13,424,332,92,Completed
+174,31,42,Kibe Enclave,Residential,2021-01-18,2024-02-17,327,295,32,Under Construction
+175,36,66,Mitra Residency,Mixed-Use,2021-03-11,2024-06-23,268,208,60,Completed
+176,15,8,Dara Residency,Mixed-Use,2025-04-23,2028-04-20,185,147,38,Under Construction
+177,39,90,Barman Greens,Residential,2025-01-04,2026-07-08,258,149,109,Under Construction
+178,35,34,Sangha Meadows,Residential,2022-07-17,2026-06-20,102,76,26,Completed
+179,34,30,Biswas Enclave,Villa Community,2024-04-08,2025-05-07,581,519,62,Completed
+180,1,34,Om Vista,Residential,2023-06-01,2026-10-29,50,41,9,Completed
+181,38,60,Salvi Enclave,Residential,2020-09-13,2023-08-01,338,217,121,Under Construction
+182,24,21,Cherian Residency,Residential,2025-02-26,2026-12-11,65,60,5,Under Construction
+183,3,75,Pathak Meadows,Residential,2023-01-06,2025-10-22,206,186,20,Nearing Completion
+184,32,8,Sharaf Enclave,Mixed-Use,2024-02-16,2027-10-03,225,162,63,Under Construction
+185,27,56,Saran Greens,Residential,2024-07-09,2025-10-03,174,126,48,Under Construction
+186,14,38,Vig Residency,Villa Community,2021-08-07,2024-01-23,453,342,111,Completed
+187,7,46,Madan Vista,Residential,2025-12-10,2029-06-05,532,508,24,Nearing Completion
+188,7,77,Yohannan Towers,Mixed-Use,2024-01-08,2026-05-30,117,115,2,Completed
+189,25,23,Shroff Meadows,Residential,2024-11-22,2027-09-17,393,389,4,Under Construction
+190,32,48,Loyal Towers,Residential,2023-01-11,2024-09-23,480,430,50,Nearing Completion
+191,22,34,Korpal Enclave,Mixed-Use,2022-05-28,2025-03-15,456,451,5,Under Construction
+192,2,64,Chadha Towers,Residential,2025-03-14,2026-04-26,378,315,63,Under Construction
+193,35,71,Seshadri Towers,Residential,2022-03-02,2026-01-28,225,138,87,Completed
+194,37,29,Shetty Residency,Residential,2021-12-21,2024-09-27,340,277,63,Under Construction
+195,16,29,Raghavan Residency,Residential,2023-10-07,2024-11-15,100,83,17,Under Construction
+196,13,61,Talwar Greens,Residential,2022-06-25,2023-08-12,195,135,60,Nearing Completion
+197,16,1,Gopal Towers,Residential,2025-04-24,2027-11-27,532,345,187,Completed
+198,3,9,Pant Meadows,Residential,2023-04-25,2027-02-05,132,107,25,Nearing Completion
+199,18,86,Oak Heights,Villa Community,2025-01-07,2028-01-11,184,110,74,Nearing Completion
+200,9,73,Majumdar Vista,Residential,2022-03-03,2023-03-04,396,352,44,Nearing Completion
+201,37,20,Varughese Residency,Residential,2023-09-09,2024-10-22,528,470,58,Under Construction
+202,1,67,Chada Meadows,Villa Community,2025-11-05,2027-03-17,274,210,64,Completed
+203,35,56,Ray Heights,Residential,2021-12-16,2023-12-02,459,450,9,Completed
+204,40,73,Khosla Enclave,Residential,2023-04-27,2024-05-07,396,254,142,Under Construction
+205,5,9,Swaminathan Towers,Residential,2024-06-06,2025-12-11,397,314,83,Under Construction
+206,36,50,Badal Towers,Residential,2023-02-05,2024-02-17,276,237,39,Under Construction
+207,6,45,Kant Residency,Residential,2021-02-21,2023-05-04,549,402,147,Completed
+208,8,28,Kohli Heights,Residential,2022-11-09,2026-05-22,427,405,22,Under Construction
+209,22,5,Pillay Towers,Residential,2022-04-26,2024-12-10,522,330,192,Completed
+210,25,3,Wali Towers,Residential,2023-03-27,2026-07-05,95,90,5,Under Construction
+211,2,74,Narayanan Meadows,Residential,2022-07-10,2025-04-28,435,303,132,Under Construction
+212,4,60,Setty Meadows,Residential,2022-07-26,2026-03-26,233,181,52,Completed
+213,25,12,Krishnamurthy Towers,Residential,2022-02-14,2024-04-03,43,41,2,Completed
+214,37,50,Hans Meadows,Residential,2021-11-25,2024-09-18,244,174,70,Completed
+215,11,50,Wason Greens,Residential,2022-05-14,2023-09-06,133,103,30,Under Construction
+216,40,10,Goyal Heights,Residential,2025-11-11,2026-12-14,257,207,50,Under Construction
+217,10,49,Sule Greens,Villa Community,2021-09-07,2023-02-15,313,270,43,Under Construction
+218,8,65,Vohra Meadows,Residential,2022-02-25,2025-10-24,377,288,89,Under Construction
+219,9,83,Chaudhry Greens,Mixed-Use,2023-11-30,2026-09-24,124,122,2,Nearing Completion
+220,7,4,Minhas Greens,Residential,2025-03-18,2027-07-13,209,143,66,Under Construction
+221,3,48,Gola Towers,Residential,2021-11-19,2023-11-28,191,158,33,Completed
+222,33,34,Walla Heights,Residential,2022-04-18,2026-04-16,124,113,11,Completed
+223,10,10,Bath Heights,Residential,2021-04-30,2025-04-22,532,523,9,Completed
+224,38,9,Master Greens,Residential,2025-12-28,2027-06-08,517,502,15,Under Construction
+225,8,74,Date Meadows,Residential,2024-06-20,2028-05-10,549,457,92,Completed
+226,15,26,Swaminathan Meadows,Residential,2024-02-21,2026-10-14,72,70,2,Under Construction
+227,33,16,Arora Meadows,Mixed-Use,2021-03-13,2025-02-06,571,399,172,Completed
+228,10,28,Singh Residency,Residential,2023-10-16,2025-11-29,200,189,11,Completed
+229,36,58,Oak Greens,Villa Community,2023-04-07,2026-01-29,554,467,87,Completed
+230,12,26,Behl Meadows,Mixed-Use,2021-08-24,2025-02-15,468,357,111,Completed
+231,30,79,Sridhar Vista,Mixed-Use,2022-01-08,2026-01-02,73,53,20,Completed
+232,28,55,Bhattacharyya Vista,Residential,2021-04-05,2023-10-15,390,285,105,Completed
+233,13,67,Borah Enclave,Residential,2022-11-02,2026-08-15,57,44,13,Nearing Completion
+234,9,14,Bera Enclave,Villa Community,2023-10-22,2025-10-21,450,396,54,Under Construction
+235,29,10,Modi Vista,Residential,2021-06-19,2025-06-15,419,272,147,Under Construction
+236,39,73,Kothari Greens,Mixed-Use,2021-02-06,2023-12-31,78,62,16,Completed
+237,3,3,Saha Vista,Residential,2021-04-13,2024-04-03,469,413,56,Under Construction
+238,2,64,Kara Enclave,Residential,2023-12-20,2026-03-10,267,248,19,Completed
+239,32,15,Rai Heights,Mixed-Use,2024-11-24,2027-10-17,363,269,94,Completed
+240,13,74,Savant Greens,Residential,2023-02-10,2024-04-04,80,62,18,Under Construction
+241,20,65,Sanghvi Vista,Villa Community,2022-04-08,2025-11-08,264,163,101,Under Construction
+242,39,77,Bhasin Residency,Residential,2022-04-24,2024-09-26,166,107,59,Under Construction
+243,11,56,Chaudhary Vista,Residential,2023-12-26,2025-08-17,273,211,62,Completed
+244,28,47,Johal Meadows,Residential,2025-11-04,2028-08-06,389,353,36,Completed
+245,1,7,Lalla Enclave,Residential,2024-01-27,2026-06-17,171,133,38,Under Construction
+246,39,14,Dugar Vista,Residential,2024-04-06,2027-08-03,191,115,76,Nearing Completion
+247,12,4,Borde Residency,Residential,2021-12-13,2025-06-02,444,326,118,Completed
+248,38,57,Rege Enclave,Mixed-Use,2021-06-29,2022-08-19,194,117,77,Completed
+249,1,1,Singhal Heights,Residential,2023-02-10,2025-07-05,230,199,31,Completed
+250,12,63,Kata Residency,Residential,2022-03-27,2025-11-27,282,203,79,Nearing Completion
+251,5,7,Mandal Meadows,Residential,2022-03-20,2025-03-28,104,82,22,Completed
+252,3,74,Setty Greens,Mixed-Use,2024-07-01,2025-07-05,133,97,36,Under Construction
+253,26,46,Kaur Residency,Residential,2021-01-09,2022-11-09,112,104,8,Completed
+254,1,24,Hora Greens,Residential,2025-09-18,2028-08-23,66,59,7,Under Construction
+255,7,72,Kar Towers,Residential,2022-12-21,2026-07-26,306,278,28,Under Construction
+256,15,11,Lata Greens,Residential,2024-03-12,2027-06-30,273,180,93,Completed
+257,7,59,Bora Meadows,Residential,2025-03-06,2027-04-16,527,504,23,Completed
+258,25,43,Mohanty Vista,Residential,2020-12-16,2022-11-04,116,114,2,Completed
+259,8,81,Mani Residency,Mixed-Use,2023-11-27,2027-10-29,69,53,16,Under Construction
+260,25,45,Sidhu Enclave,Mixed-Use,2023-01-18,2025-02-23,72,71,1,Completed
+261,40,37,Rau Heights,Residential,2024-06-02,2025-09-19,425,349,76,Under Construction
+262,11,1,Tella Vista,Residential,2025-10-25,2028-01-20,316,246,70,Nearing Completion
+263,7,47,Sarma Vista,Mixed-Use,2023-08-08,2025-05-26,445,440,5,Completed
+264,34,7,Baral Towers,Residential,2021-01-27,2023-08-20,586,465,121,Under Construction
+265,8,74,Naidu Greens,Residential,2025-07-10,2027-09-01,245,191,54,Completed
+266,19,35,Bal Meadows,Residential,2023-12-14,2025-08-14,399,288,111,Under Construction
+267,36,24,Bail Residency,Residential,2021-02-18,2024-01-26,585,448,137,Under Construction
+268,9,35,Luthra Greens,Residential,2026-02-17,2027-08-02,543,467,76,Under Construction
+269,5,32,Gill Heights,Villa Community,2023-10-20,2026-04-02,458,320,138,Under Construction
+270,38,29,Sathe Towers,Villa Community,2023-03-22,2025-10-23,404,315,89,Under Construction
+271,17,58,Golla Heights,Mixed-Use,2025-09-02,2027-10-07,166,112,54,Under Construction
+272,31,74,Sarin Meadows,Residential,2026-02-11,2027-12-10,589,450,139,Completed
+273,2,32,Swamy Meadows,Residential,2024-02-15,2025-11-25,233,184,49,Under Construction
+274,39,38,Singhal Heights,Residential,2025-12-17,2029-01-10,426,330,96,Completed
+275,12,8,Nath Vista,Residential,2022-07-19,2024-11-20,115,94,21,Nearing Completion
+276,37,84,Cheema Enclave,Mixed-Use,2022-05-26,2026-04-13,387,322,65,Completed
+277,29,5,Narayan Towers,Residential,2025-05-08,2027-12-27,282,164,118,Under Construction
+278,5,8,Tandon Vista,Residential,2022-11-23,2026-11-16,335,248,87,Nearing Completion
+279,17,53,Rattan Towers,Residential,2022-03-21,2023-10-22,572,447,125,Nearing Completion
+280,18,50,Bansal Heights,Villa Community,2025-02-08,2026-08-19,159,117,42,Under Construction
+281,25,17,Murty Vista,Residential,2023-02-18,2026-07-04,548,503,45,Nearing Completion
+282,13,42,D’Alia Enclave,Residential,2022-01-08,2025-05-03,213,171,42,Completed
+283,37,64,Raval Residency,Mixed-Use,2025-12-20,2027-06-16,356,291,65,Completed
+284,7,17,Agarwal Vista,Residential,2025-05-22,2027-07-08,349,345,4,Under Construction
+285,22,62,Shere Greens,Residential,2024-04-01,2026-03-19,514,386,128,Completed
+286,15,30,Guha Meadows,Residential,2022-11-27,2026-08-02,40,33,7,Under Construction
+287,30,31,Tara Greens,Residential,2023-06-26,2027-03-28,596,417,179,Under Construction
+288,21,59,Behl Residency,Mixed-Use,2024-01-27,2026-05-27,194,135,59,Under Construction
+289,3,72,Deep Heights,Mixed-Use,2021-10-01,2024-06-09,240,164,76,Nearing Completion
+290,10,63,Sarma Residency,Residential,2025-09-25,2026-10-25,510,492,18,Under Construction
+291,26,66,Sundaram Towers,Residential,2025-06-23,2026-12-31,525,385,140,Under Construction
+292,23,35,Khatri Vista,Mixed-Use,2021-04-19,2024-10-24,120,118,2,Nearing Completion
+293,15,7,Mukhopadhyay Vista,Residential,2024-07-14,2028-03-17,274,213,61,Under Construction
+294,4,88,Reddy Vista,Residential,2023-08-30,2025-06-04,205,174,31,Completed
+295,13,31,Comar Vista,Mixed-Use,2021-02-22,2023-03-27,205,154,51,Nearing Completion
+296,19,67,Dalal Heights,Mixed-Use,2023-03-04,2025-03-01,428,404,24,Completed
+297,21,55,Dube Vista,Residential,2024-03-12,2026-08-01,65,57,8,Completed
+298,1,10,Manne Enclave,Residential,2023-05-17,2024-05-16,273,230,43,Completed
+299,34,45,Mahajan Towers,Residential,2023-06-07,2025-01-11,154,121,33,Under Construction
+300,16,18,Subramanian Meadows,Residential,2022-12-01,2024-11-04,449,322,127,Nearing Completion
+301,3,23,Kohli Towers,Residential,2026-01-09,2028-04-15,209,197,12,Under Construction
+302,30,43,Dhillon Meadows,Villa Community,2023-02-22,2025-02-24,599,436,163,Completed
+303,40,75,Trivedi Vista,Mixed-Use,2022-09-28,2024-12-01,370,261,109,Under Construction
+304,22,43,Deshpande Residency,Villa Community,2024-09-26,2026-07-17,329,255,74,Under Construction
+305,13,17,Majumdar Greens,Residential,2025-05-20,2027-03-06,376,332,44,Completed
+306,27,3,Sachdeva Residency,Villa Community,2024-11-18,2028-01-02,136,85,51,Nearing Completion
+307,39,42,Tripathi Vista,Residential,2022-07-02,2025-08-03,440,379,61,Nearing Completion
+308,36,81,Agate Residency,Residential,2022-02-06,2024-02-18,57,41,16,Under Construction
+309,11,69,Misra Meadows,Residential,2022-03-10,2024-03-11,587,501,86,Completed
+310,35,71,Suri Heights,Residential,2025-03-28,2027-11-19,214,178,36,Completed
+311,10,45,Sekhon Meadows,Residential,2025-05-23,2028-08-04,255,213,42,Completed
+312,33,86,Pai Towers,Residential,2023-08-06,2026-09-17,339,289,50,Under Construction
+313,23,39,Purohit Vista,Residential,2022-06-17,2024-11-26,106,91,15,Under Construction
+314,36,7,Nagy Greens,Residential,2023-02-19,2026-09-30,416,323,93,Under Construction
+315,26,78,Khare Meadows,Residential,2025-06-01,2029-03-21,516,452,64,Under Construction
+316,32,54,Kaur Towers,Residential,2023-10-11,2026-06-03,201,169,32,Completed
+317,31,84,Roy Towers,Residential,2025-05-04,2029-02-20,281,225,56,Under Construction
+318,37,46,Solanki Towers,Residential,2020-11-14,2022-11-14,419,382,37,Under Construction
+319,21,68,Raj Enclave,Mixed-Use,2024-07-05,2028-05-04,399,380,19,Completed
+320,27,78,Doshi Heights,Villa Community,2022-10-03,2025-07-22,594,492,102,Nearing Completion
+321,5,45,Bansal Residency,Residential,2023-05-11,2024-05-22,292,224,68,Completed
+322,39,50,Narula Meadows,Residential,2021-04-29,2023-08-04,234,163,71,Completed
+323,9,32,Sarraf Enclave,Villa Community,2025-06-01,2027-12-18,454,404,50,Completed
+324,21,34,Shan Enclave,Residential,2021-03-07,2022-05-30,82,81,1,Completed
+325,37,67,Dhawan Greens,Residential,2020-09-18,2023-10-19,296,248,48,Nearing Completion
+326,13,25,Dubey Residency,Residential,2022-11-20,2024-08-20,418,267,151,Completed
+327,23,40,Lanka Greens,Villa Community,2021-01-16,2023-08-14,179,153,26,Completed
+328,15,59,Rao Enclave,Residential,2022-06-30,2026-02-20,153,101,52,Under Construction
+329,28,85,Narasimhan Residency,Residential,2024-03-16,2025-05-10,391,372,19,Nearing Completion
+330,27,37,Walla Heights,Residential,2025-04-27,2027-07-07,510,354,156,Under Construction
+331,20,30,Nadig Meadows,Residential,2022-09-21,2025-09-18,318,220,98,Nearing Completion
+332,26,21,Sura Greens,Residential,2024-01-30,2026-05-19,184,182,2,Completed
+333,36,50,Banik Heights,Residential,2025-06-06,2029-05-31,168,149,19,Under Construction
+334,27,49,Keer Meadows,Residential,2024-01-11,2025-08-16,531,384,147,Under Construction
+335,23,34,Mani Heights,Residential,2024-02-08,2025-09-29,191,189,2,Completed
+336,10,43,Chana Heights,Mixed-Use,2026-02-12,2028-03-25,226,191,35,Nearing Completion
+337,14,59,Chaudhari Residency,Residential,2023-01-07,2026-10-24,344,237,107,Nearing Completion
+338,40,5,Chaudhry Residency,Villa Community,2024-10-24,2026-09-08,471,313,158,Completed
+339,3,41,Mistry Residency,Residential,2023-01-27,2025-09-07,190,170,20,Completed
+340,19,37,Batra Towers,Residential,2025-08-07,2027-10-31,529,432,97,Completed
+341,31,85,Bhalla Towers,Residential,2022-06-01,2024-09-27,403,326,77,Under Construction
+342,40,32,Prasad Towers,Residential,2022-03-31,2025-01-05,268,230,38,Nearing Completion
+343,13,28,Konda Residency,Villa Community,2023-01-01,2024-04-25,468,463,5,Under Construction
+344,30,27,Gole Meadows,Residential,2023-07-22,2026-02-06,480,359,121,Nearing Completion
+345,34,49,Brar Meadows,Villa Community,2021-07-26,2025-01-02,423,329,94,Completed
+346,28,56,Raja Greens,Residential,2023-12-26,2026-08-22,182,146,36,Nearing Completion
+347,35,16,Khosla Heights,Residential,2024-01-15,2027-05-28,212,129,83,Under Construction
+348,20,41,Dhar Enclave,Residential,2023-05-15,2025-04-27,545,343,202,Completed
+349,8,2,Kumar Vista,Residential,2021-11-28,2023-06-28,520,481,39,Completed
+350,3,85,Andra Vista,Residential,2023-02-28,2024-03-13,205,185,20,Under Construction
+351,15,17,Shroff Enclave,Residential,2025-07-29,2028-08-26,168,134,34,Under Construction
+352,19,7,Dugar Towers,Residential,2025-08-03,2027-10-30,450,445,5,Under Construction
+353,28,24,Pai Enclave,Residential,2021-01-14,2022-05-09,164,162,2,Under Construction
+354,36,36,Mistry Enclave,Villa Community,2026-01-24,2027-11-13,227,183,44,Completed
+355,21,61,Samra Heights,Residential,2024-02-23,2026-10-24,272,269,3,Completed
+356,31,25,Shan Greens,Mixed-Use,2024-06-05,2026-01-14,223,121,102,Completed
+357,17,18,Issac Greens,Residential,2025-04-13,2027-11-17,104,70,34,Nearing Completion
+358,9,15,Subramanian Heights,Mixed-Use,2026-02-16,2028-08-29,104,87,17,Under Construction
+359,29,28,Raj Vista,Mixed-Use,2021-03-21,2023-09-28,274,211,63,Under Construction
+360,38,87,Merchant Enclave,Residential,2023-10-11,2026-12-01,533,371,162,Completed
+361,32,1,Merchant Towers,Residential,2026-02-03,2029-08-06,499,389,110,Completed
+362,5,36,Randhawa Residency,Mixed-Use,2020-10-02,2023-04-14,499,457,42,Completed
+363,19,81,Bawa Residency,Residential,2022-02-21,2023-05-14,257,201,56,Nearing Completion
+364,29,30,Taneja Heights,Residential,2025-08-22,2028-04-10,589,487,102,Nearing Completion
+365,8,87,Mangat Towers,Residential,2025-03-19,2027-07-06,598,380,218,Completed
+366,16,49,Karpe Meadows,Residential,2024-11-24,2027-09-21,435,327,108,Completed
+367,28,84,Pandey Meadows,Residential,2023-12-21,2026-12-09,436,339,97,Under Construction
+368,1,80,Gupta Meadows,Mixed-Use,2021-11-01,2023-02-22,67,66,1,Completed
+369,27,39,Devan Residency,Residential,2024-01-18,2027-05-23,460,323,137,Under Construction
+370,38,42,Baral Meadows,Residential,2024-02-02,2027-03-23,256,243,13,Nearing Completion
+371,31,18,Sastry Heights,Mixed-Use,2022-05-01,2025-07-30,548,490,58,Completed
+372,1,68,Patla Heights,Residential,2020-10-25,2023-09-17,127,125,2,Completed
+373,32,41,Chana Heights,Residential,2024-08-29,2026-10-25,369,316,53,Nearing Completion
+374,9,58,Narain Residency,Residential,2025-08-20,2028-02-26,145,95,50,Under Construction
+375,10,16,Gill Enclave,Residential,2024-09-28,2027-01-27,292,240,52,Under Construction
+376,5,32,Zacharia Residency,Residential,2021-09-26,2025-07-20,396,326,70,Nearing Completion
+377,39,23,Pau Heights,Residential,2025-06-14,2027-11-03,195,168,27,Nearing Completion
+378,40,13,Mahajan Enclave,Mixed-Use,2023-07-21,2026-11-18,466,383,83,Completed
+379,25,25,Kurian Enclave,Residential,2025-03-14,2028-06-09,124,100,24,Nearing Completion
+380,11,6,Subramaniam Enclave,Residential,2025-08-29,2027-05-22,352,231,121,Under Construction
+381,8,26,Merchant Greens,Mixed-Use,2025-12-14,2029-08-23,537,495,42,Nearing Completion
+382,22,81,Nigam Enclave,Residential,2024-09-26,2026-06-25,362,259,103,Nearing Completion
+383,13,42,Sidhu Greens,Residential,2025-01-20,2027-01-12,458,384,74,Completed
+384,25,29,Dhaliwal Towers,Residential,2025-12-05,2027-11-02,218,197,21,Under Construction
+385,20,21,Kara Towers,Residential,2024-10-12,2028-02-17,357,306,51,Under Construction
+386,17,47,Ranganathan Meadows,Residential,2025-05-13,2029-02-09,435,271,164,Nearing Completion
+387,31,15,Pau Heights,Residential,2025-12-14,2028-10-22,355,326,29,Under Construction
+388,4,37,Rana Heights,Residential,2021-02-16,2024-01-15,450,331,119,Under Construction
+389,38,16,Yadav Towers,Residential,2020-09-15,2022-05-23,374,284,90,Completed
+390,25,39,Pillay Heights,Residential,2021-04-24,2023-10-17,522,342,180,Completed
+391,30,29,Lala Heights,Residential,2024-05-01,2025-06-28,294,283,11,Nearing Completion
+392,12,46,Prabhu Towers,Residential,2023-11-06,2026-09-27,70,65,5,Completed
+393,24,88,Kaur Vista,Residential,2021-03-24,2023-01-19,127,110,17,Under Construction
+394,37,74,Narang Enclave,Residential,2023-03-24,2025-12-17,293,281,12,Under Construction
+395,14,83,Kant Enclave,Residential,2025-08-31,2028-12-31,381,288,93,Nearing Completion
+396,12,10,Shetty Greens,Residential,2024-03-12,2027-02-09,573,491,82,Completed
+397,38,30,Mittal Towers,Residential,2025-08-19,2027-06-18,555,538,17,Under Construction
+398,35,6,Dada Meadows,Mixed-Use,2024-03-15,2026-06-21,87,80,7,Nearing Completion
+399,40,64,Barad Vista,Residential,2021-05-26,2024-05-16,158,133,25,Under Construction
+400,17,60,Tailor Vista,Villa Community,2022-04-22,2023-12-14,427,260,167,Completed
+401,30,74,Keer Vista,Residential,2021-04-09,2024-10-22,74,56,18,Completed
+402,32,67,Deshmukh Enclave,Residential,2025-07-06,2029-03-08,211,169,42,Under Construction
+403,2,15,Prabhakar Heights,Residential,2022-10-08,2024-05-25,168,109,59,Completed
+404,28,26,Zachariah Residency,Villa Community,2024-04-27,2026-11-28,591,499,92,Completed
+405,30,40,Dubey Enclave,Residential,2022-12-09,2024-10-08,487,360,127,Nearing Completion
+406,6,73,Chaudhary Greens,Residential,2025-07-02,2027-08-06,238,167,71,Under Construction
+407,10,10,Reddy Vista,Residential,2025-03-20,2028-08-21,122,117,5,Under Construction
+408,35,3,Mammen Enclave,Mixed-Use,2025-10-18,2029-04-13,435,338,97,Under Construction
+409,38,44,Prabhakar Meadows,Residential,2020-10-23,2023-07-20,323,268,55,Under Construction
+410,29,84,Saxena Residency,Residential,2021-10-29,2024-03-15,211,121,90,Under Construction
+411,27,14,Patil Meadows,Mixed-Use,2025-11-10,2027-12-13,146,104,42,Nearing Completion
+412,29,59,Pillai Vista,Residential,2021-03-06,2023-02-12,341,169,172,Completed
+413,26,21,Parmer Residency,Residential,2023-08-17,2027-06-11,48,30,18,Completed
+414,38,47,Majumdar Towers,Mixed-Use,2020-12-18,2024-06-22,242,238,4,Under Construction
+415,34,73,Das Greens,Villa Community,2021-09-04,2024-10-07,273,246,27,Under Construction
+416,4,3,Sha Heights,Mixed-Use,2025-11-07,2028-07-20,364,264,100,Completed
+417,18,33,Kala Vista,Residential,2021-02-19,2025-01-16,562,375,187,Under Construction
+418,3,37,Bail Greens,Residential,2024-02-29,2025-12-30,162,149,13,Nearing Completion
+419,18,77,Nath Enclave,Residential,2020-11-28,2023-09-20,362,179,183,Completed
+420,1,31,Dass Residency,Residential,2021-12-21,2024-01-27,88,84,4,Completed
+421,18,46,Jha Vista,Residential,2024-12-17,2026-12-21,593,587,6,Under Construction
+422,20,29,Johal Meadows,Residential,2021-01-03,2024-08-13,483,478,5,Under Construction
+423,8,10,Kaul Heights,Villa Community,2023-11-10,2025-08-26,350,263,87,Nearing Completion
+424,13,43,Divan Vista,Villa Community,2022-06-10,2025-04-07,557,369,188,Completed
+425,7,69,Agate Heights,Residential,2024-12-20,2027-05-14,465,404,61,Completed
+426,20,61,Dhillon Enclave,Mixed-Use,2022-02-27,2025-12-17,250,155,95,Under Construction
+427,33,46,Zachariah Meadows,Residential,2026-01-23,2027-02-25,154,132,22,Completed
+428,32,53,Ghosh Meadows,Residential,2022-01-04,2025-04-30,109,68,41,Nearing Completion
+429,29,59,Bal Residency,Residential,2021-03-27,2025-01-06,597,458,139,Completed
+430,38,27,Parmar Towers,Residential,2021-05-10,2024-09-02,552,478,74,Under Construction
+431,6,75,Khanna Residency,Residential,2024-12-23,2028-05-18,259,199,60,Completed
+432,26,71,Babu Enclave,Residential,2023-11-15,2027-06-09,507,455,52,Under Construction
+433,16,24,Ben Towers,Residential,2021-08-04,2024-11-01,281,196,85,Under Construction
+434,13,47,Sama Towers,Residential,2021-04-30,2025-03-17,414,301,113,Completed
+435,3,54,Bhatt Greens,Mixed-Use,2023-07-11,2026-06-25,147,135,12,Completed
+436,19,38,Pathak Heights,Residential,2023-04-02,2025-01-29,197,130,67,Completed
+437,37,2,Chopra Meadows,Residential,2023-06-16,2026-01-30,234,224,10,Under Construction
+438,4,59,Kant Heights,Villa Community,2023-02-13,2025-06-11,186,119,67,Completed
+439,27,75,Bassi Towers,Residential,2025-10-31,2029-10-13,565,308,257,Under Construction
+440,35,72,Verma Enclave,Residential,2024-08-19,2027-06-01,124,93,31,Nearing Completion
+441,6,31,Balasubramanian Towers,Villa Community,2022-04-16,2023-11-09,42,29,13,Nearing Completion
+442,29,90,Srinivas Vista,Residential,2020-12-19,2024-03-26,71,54,17,Nearing Completion
+443,15,87,Sandhu Meadows,Villa Community,2025-04-17,2027-01-15,441,325,116,Under Construction
+444,1,30,Swaminathan Residency,Residential,2024-05-28,2027-06-23,192,189,3,Nearing Completion
+445,1,70,Sawhney Greens,Residential,2024-07-20,2027-05-12,523,442,81,Under Construction
+446,32,21,Buch Meadows,Residential,2021-01-13,2023-07-06,207,174,33,Completed
+447,24,86,Divan Meadows,Residential,2022-05-28,2025-02-25,258,169,89,Completed
+448,9,11,Maharaj Enclave,Residential,2020-12-28,2024-10-13,499,381,118,Completed
+449,32,79,Nair Heights,Residential,2024-01-25,2026-04-18,353,312,41,Completed
+450,15,41,Wali Greens,Residential,2022-09-23,2024-01-30,589,421,168,Nearing Completion
+451,31,54,Tiwari Meadows,Residential,2022-04-03,2025-08-07,431,404,27,Under Construction
+452,30,66,Chaudhary Greens,Residential,2023-12-18,2026-08-30,205,178,27,Completed
+453,5,82,Contractor Heights,Residential,2024-12-29,2028-05-15,57,39,18,Under Construction
+454,13,14,Kale Greens,Residential,2025-04-28,2028-05-24,296,237,59,Under Construction
+455,30,29,Kari Enclave,Mixed-Use,2022-12-31,2025-09-23,241,213,28,Completed
+456,38,20,Setty Enclave,Residential,2022-11-28,2024-05-19,69,56,13,Under Construction
+457,4,30,Chandran Vista,Residential,2022-10-29,2025-03-23,309,204,105,Completed
+458,15,53,Munshi Vista,Residential,2022-05-08,2025-08-19,477,412,65,Nearing Completion
+459,24,48,Prasad Heights,Villa Community,2024-04-16,2025-08-23,562,438,124,Under Construction
+460,17,47,Som Heights,Villa Community,2025-11-16,2027-08-16,406,386,20,Completed
+461,1,24,Chada Towers,Mixed-Use,2020-12-31,2024-02-21,78,61,17,Under Construction
+462,12,50,Char Meadows,Residential,2021-02-22,2024-03-22,403,302,101,Completed
+463,3,13,Pradhan Towers,Villa Community,2024-09-22,2028-03-22,496,321,175,Completed
+464,34,88,Bhasin Enclave,Residential,2025-02-04,2028-05-05,337,332,5,Under Construction
+465,16,16,Narayan Greens,Residential,2023-11-10,2025-09-20,351,217,134,Under Construction
+466,18,83,Roy Vista,Villa Community,2024-04-26,2026-04-08,582,416,166,Under Construction
+467,25,38,Sampath Residency,Residential,2022-07-30,2026-03-26,563,490,73,Under Construction
+468,10,18,Behl Greens,Residential,2025-05-28,2027-05-07,64,62,2,Completed
+469,38,14,Muni Heights,Residential,2025-12-16,2029-06-05,122,91,31,Under Construction
+470,40,85,Tripathi Heights,Mixed-Use,2022-07-26,2025-11-13,320,304,16,Completed
+471,27,14,Subramaniam Towers,Residential,2021-10-20,2024-05-04,212,100,112,Nearing Completion
+472,32,88,Chokshi Vista,Residential,2021-11-12,2024-12-31,430,386,44,Completed
+473,29,84,Pillai Towers,Residential,2022-07-23,2024-08-04,415,335,80,Completed
+474,19,66,Mallick Enclave,Residential,2021-04-06,2025-04-02,147,114,33,Under Construction
+475,25,75,Sanghvi Vista,Residential,2023-10-16,2027-08-08,141,102,39,Nearing Completion
+476,26,33,Bal Vista,Mixed-Use,2025-04-12,2028-08-09,113,107,6,Nearing Completion
+477,20,37,Loke Heights,Residential,2023-12-25,2025-03-26,260,228,32,Under Construction
+478,8,48,Mahajan Vista,Residential,2020-10-16,2024-04-12,571,565,6,Under Construction
+479,40,14,More Towers,Residential,2024-06-30,2028-02-05,558,377,181,Under Construction
+480,37,56,Panchal Enclave,Mixed-Use,2025-09-13,2029-04-09,449,371,78,Under Construction
+481,18,76,Dhar Enclave,Residential,2020-08-31,2022-05-29,430,358,72,Under Construction
+482,23,24,Rattan Vista,Residential,2023-09-30,2026-11-14,192,125,67,Completed
+483,17,65,Balasubramanian Vista,Residential,2021-01-05,2022-08-05,92,52,40,Under Construction
+484,33,46,Wali Meadows,Residential,2021-02-19,2024-08-01,561,457,104,Under Construction
+485,29,84,Saini Greens,Mixed-Use,2021-10-25,2025-06-04,86,63,23,Completed
+486,31,48,Dugar Vista,Residential,2023-02-16,2026-04-22,311,234,77,Under Construction
+487,30,23,Nair Meadows,Residential,2022-09-01,2025-05-19,491,388,103,Under Construction
+488,9,38,Chad Heights,Residential,2024-11-26,2027-02-15,110,92,18,Under Construction
+489,15,76,Dugal Greens,Residential,2025-06-28,2027-08-31,430,351,79,Under Construction
+490,17,14,Bawa Towers,Residential,2021-07-01,2023-06-07,108,63,45,Under Construction
+491,6,56,Magar Heights,Residential,2024-05-04,2027-05-10,502,478,24,Completed
+492,13,19,Samra Meadows,Residential,2023-01-26,2025-09-02,85,69,16,Under Construction
+493,34,32,Sathe Residency,Residential,2023-04-21,2027-04-11,127,113,14,Completed
+494,1,7,Kale Towers,Residential,2022-11-29,2026-11-11,470,465,5,Completed
+495,40,89,Comar Greens,Residential,2024-10-13,2026-10-09,355,272,83,Under Construction
+496,2,74,Choudhry Vista,Residential,2022-07-13,2023-12-01,95,79,16,Nearing Completion
+497,39,78,Sur Heights,Residential,2022-03-11,2023-04-23,538,430,108,Completed
+498,35,83,Morar Heights,Residential,2023-07-13,2024-09-16,201,145,56,Nearing Completion
+499,13,25,Rana Heights,Residential,2020-11-18,2022-11-08,418,373,45,Completed
+500,7,36,Bhakta Greens,Residential,2026-01-17,2027-11-15,470,465,5,Nearing Completion

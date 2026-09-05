@@ -1,0 +1,5 @@
+price_band,property_count,avg_rental_yield_pct,avg_area_sqft
+Budget (<=P25),2000,3.33,769
+Mid (P25-P50),2000,3.30,1068
+Upper-Mid (P50-P75),2000,3.29,1282
+Premium (>P75),2000,3.25,1583

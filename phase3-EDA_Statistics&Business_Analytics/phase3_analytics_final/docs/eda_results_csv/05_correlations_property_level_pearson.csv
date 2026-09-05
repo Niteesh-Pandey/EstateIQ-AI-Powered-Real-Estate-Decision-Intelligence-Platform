@@ -1,0 +1,9 @@
+var1,var2,correlation,method,caveat
+area_sqft,asking_price,0.838,pearson,Correlation does not imply causation. These are observed statistical associations only.
+area_sqft,bedrooms,0.83,pearson,Correlation does not imply causation. These are observed statistical associations only.
+asking_price,monthly_rent,0.824,pearson,Correlation does not imply causation. These are observed statistical associations only.
+area_sqft,monthly_rent,0.773,pearson,Correlation does not imply causation. These are observed statistical associations only.
+bedrooms,asking_price,0.696,pearson,Correlation does not imply causation. These are observed statistical associations only.
+bedrooms,monthly_rent,0.643,pearson,Correlation does not imply causation. These are observed statistical associations only.
+demand_index,average_days_on_market,-0.592,pearson,Correlation does not imply causation. These are observed statistical associations only.
+infrastructure_score,development_score,0.428,pearson,Correlation does not imply causation. These are observed statistical associations only.

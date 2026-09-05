@@ -1,0 +1,128 @@
+table_name,column_name,data_type,is_nullable,business_meaning,analytical_use,missing_value_behavior
+cities,city_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+cities,city_name,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+cities,state,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+cities,country,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+cities,population,bigint,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+cities,average_income,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+cities,development_score,numeric,YES,"0-100 composite index of city-level development (income, infra)","Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+developers,developer_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+developers,developer_name,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+developers,rating,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+developers,delivery_score,numeric,YES,0-100 track record of on-time/quality project delivery,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+developers,quality_score,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+developers,track_record,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+developers,market_share,numeric,YES,% share of total units across all projects in the dataset,Descriptive stats,NULLABLE — real missingness possible
+documents,document_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+documents,source,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+documents,document_date,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+documents,city,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+documents,locality,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+documents,topic,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+documents,text,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+documents,embedding,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+economic_monthly,month,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+economic_monthly,interest_rate,numeric,YES,"Annual mortgage-adjacent interest rate (%), random-walk generated","Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+economic_monthly,mortgage_rate,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+economic_monthly,inflation,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+economic_monthly,unemployment,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+economic_monthly,GDP_growth,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+economic_monthly,income_growth,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+expenses,expense_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+expenses,property_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+expenses,date,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+expenses,property_tax,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+expenses,maintenance,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+expenses,insurance,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+expenses,management_cost,numeric,YES,"Property management fee, computed as 8% of monthly_rent at generation time","Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+expenses,renovation_cost,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+infrastructure,infrastructure_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+infrastructure,locality_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+infrastructure,type,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+infrastructure,latitude,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+infrastructure,longitude,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+infrastructure,distance_from_center,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+infrastructure,expected_completion,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+infrastructure,impact_score,numeric,YES,0-100 relevance of this infra point to nearby localities,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+listing_history,listing_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+listing_history,property_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+listing_history,listing_date,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+listing_history,asking_price,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+listing_history,status,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+listing_history,days_on_market,integer,YES,Days between listing_date and sale/expiry; KNOWN WEAK SIGNAL (see docs/data_dictionary.md — generated independent of property features),Descriptive stats,NULLABLE — real missingness possible
+listing_history,price_change_pct,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+localities,locality_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+localities,city_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+localities,locality_name,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+localities,latitude,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+localities,longitude,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+localities,population_density,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+localities,average_income,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+localities,connectivity_score,numeric,YES,0-100 transit/road connectivity quality,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+localities,safety_score,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+localities,infrastructure_score,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+localities,development_score,numeric,YES,0-100 composite: 0.3*connectivity + 0.3*infra + 0.2*safety + 0.2*commercial,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+localities,commercial_score,numeric,YES,0-100 density of commercial/business activity,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+market_monthly,locality_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+market_monthly,month,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+market_monthly,average_price_sqft,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+market_monthly,median_price_sqft,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+market_monthly,demand_index,numeric,YES,"0-100 locality-month demand proxy, influenced by interest rates","Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+market_monthly,supply_index,numeric,YES,0-100 locality-month supply proxy,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+market_monthly,units_sold,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+market_monthly,available_inventory,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+market_monthly,absorption_rate,numeric,YES,units_sold / available_inventory for that locality-month,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible
+market_monthly,average_days_on_market,numeric,YES,"Locality-month average DOM (aggregate signal, separate from listing_history.days_on_market)",Descriptive stats,NULLABLE — real missingness possible
+projects,project_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+projects,developer_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+projects,locality_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+projects,project_name,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+projects,project_type,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+projects,launch_date,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+projects,completion_date,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+projects,total_units,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+projects,units_sold,integer,YES,Cumulative units sold as of data generation date (not time-series),Descriptive stats,NULLABLE — real missingness possible
+projects,units_available,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+projects,project_status,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+properties,property_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+properties,project_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+properties,property_type,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+properties,bedrooms,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+properties,bathrooms,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+properties,area_sqft,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+properties,floor,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+properties,total_floors,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+properties,age_years,integer,YES,Years since project launch,Descriptive stats,NULLABLE — real missingness possible
+properties,parking,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+properties,furnishing,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+properties,asking_price,numeric,YES,Current listed price in INR (₹); 0.5% of rows have 2.5x outlier injected,"Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+properties,monthly_rent,numeric,YES,"Current monthly rent in INR; ~2% missing (injected, realistic)","Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+properties,monthly_rent_was_imputed,boolean,YES,See table context; no special business logic beyond raw value,General,NULLABLE — real missingness possible
+properties,asking_price_is_outlier,boolean,YES,See table context; no special business logic beyond raw value,General,NULLABLE — real missingness possible
+properties,monthly_rent_is_outlier,boolean,YES,See table context; no special business logic beyond raw value,General,NULLABLE — real missingness possible
+property_events,event_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+property_events,property_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+property_events,event_date,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+property_events,event_type,text,YES,Funnel stage: View/Inquiry/Lead/Site Visit/Booking/Cancellation,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+property_events,source,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+property_events,event_value,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+rentals,rental_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+rentals,property_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+rentals,rental_date,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+rentals,monthly_rent,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+rentals,vacancy_days,integer,YES,Days the unit sat vacant before this rental began,Descriptive stats,NULLABLE — real missingness possible
+rentals,lease_duration,integer,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+rentals,monthly_rent_is_outlier,boolean,YES,See table context; no special business logic beyond raw value,General,NULLABLE — real missingness possible
+transactions,transaction_id,integer,NO,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NOT NULL — no missingness expected
+transactions,property_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+transactions,transaction_date,date,YES,See table context; no special business logic beyond raw value,"Time-series analysis (trend, YoY/MoM, seasonality)",NULLABLE — real missingness possible
+transactions,transaction_price,numeric,YES,"Actual sale price at transaction_date, distinct from current asking_price","Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+transactions,price_per_sqft,numeric,YES,"transaction_price / area_sqft, computed at generation time","Descriptive stats, distribution analysis, outlier detection",NULLABLE — real missingness possible
+transactions,buyer_type,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+transactions,transaction_type,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+transactions,transaction_price_is_outlier,boolean,YES,See table context; no special business logic beyond raw value,General,NULLABLE — real missingness possible
+v_developer_performance,developer_id,integer,YES,Structural/identifier field — see sql/01_schema.sql for FK relationships,Join key / grouping dimension,NULLABLE — real missingness possible
+v_developer_performance,developer_name,text,YES,See table context; no special business logic beyond raw value,Segmentation dimension / categorical analysis,NULLABLE — real missingness possible
+v_developer_performance,rating,numeric,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+v_developer_performance,total_projects,bigint,YES,See table context; no special business logic beyond raw value,Descriptive stats,NULLABLE — real missingness possible
+v_developer_performance,sales_velocity_pct,numeric,YES,See table context; no special business logic beyond raw value,"Descriptive stats, correlation, segmentation KPI",NULLABLE — real missingness possible

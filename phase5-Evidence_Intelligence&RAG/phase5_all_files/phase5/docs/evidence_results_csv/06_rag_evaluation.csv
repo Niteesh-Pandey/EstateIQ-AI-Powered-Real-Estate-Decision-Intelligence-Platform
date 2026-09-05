@@ -1,0 +1,7 @@
+category,query,n_results,pass_nonzero,pass_topic,top_topics,pass_multi_source,overall_pass,sources_seen
+direct,infrastructure connectivity score Shanker Gardens Pune,8,True,True,"['Infrastructure Update', 'Infrastructure Update', 'Infrastructure Update', 'Infrastructure Update', 'Infrastructure Update']",,True,
+paraphrased,how well connected is Shanker Gardens in terms of roads and transit,8,True,,,,True,
+ambiguous,what about the market,8,True,,,,True,
+no_answer,quantum blockchain metaverse yield farming,0,True,,,,True,
+conflicting_evidence,policy regulatory outlook,8,True,True,"['Policy/Regulatory Note', 'Policy/Regulatory Note', 'Policy/Regulatory Note', 'Policy/Regulatory Note', 'Policy/Regulatory Note']",True,True,"['Developer Filing', 'Internal Research', 'Market Report', 'News']"
+unsupported,expected rental yield increase next decade prediction,0,,,,,,

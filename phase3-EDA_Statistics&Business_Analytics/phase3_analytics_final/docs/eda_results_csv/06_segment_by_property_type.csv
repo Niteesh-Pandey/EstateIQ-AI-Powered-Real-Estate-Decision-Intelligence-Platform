@@ -1,0 +1,6 @@
+property_type,property_count,median_price,median_area,avg_rental_yield_pct
+Studio,1094,12484500.0,1189.0,3.33
+Apartment,4449,12238000.0,1154.0,3.30
+Penthouse,784,12198500.0,1171.0,3.29
+Villa,919,12019000.0,1150.0,3.26
+Row House,754,12011000.0,1140.5,3.27

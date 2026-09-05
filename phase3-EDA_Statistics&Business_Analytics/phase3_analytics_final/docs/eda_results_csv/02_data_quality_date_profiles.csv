@@ -1,0 +1,5 @@
+row_count,non_null_count,min_date,max_date,future_date_count,null_count,table,column
+20000,20000,2021-08-19,2026-08-19,0,0,transactions,transaction_date
+10000,10000,2022-08-20,2026-08-19,0,0,rentals,rental_date
+12000,12000,2023-08-20,2026-08-19,0,0,listing_history,listing_date
+25000,25000,2024-08-19,2026-08-19,0,0,property_events,event_date

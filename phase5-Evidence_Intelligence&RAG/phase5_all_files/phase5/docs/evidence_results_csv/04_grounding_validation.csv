@@ -1,0 +1,16 @@
+sample_evidence_id,case,status,n_unsupported_claims,unknown_citation_ids,coverage_pct
+ev_1_0,well_grounded,PASS,0,[],100.0
+ev_1_0,hallucinated_citation,BLOCKED,0,['ev_999999_0'],100.0
+ev_1_0,uncited_claim,PASS WITH LIMITATIONS,0,[],0.0
+ev_2_0,well_grounded,PASS,0,[],100.0
+ev_2_0,hallucinated_citation,BLOCKED,0,['ev_999999_0'],100.0
+ev_2_0,uncited_claim,PASS WITH LIMITATIONS,0,[],0.0
+ev_3_0,well_grounded,PASS,0,[],100.0
+ev_3_0,hallucinated_citation,BLOCKED,0,['ev_999999_0'],100.0
+ev_3_0,uncited_claim,PASS WITH LIMITATIONS,0,[],0.0
+ev_4_0,well_grounded,PASS,0,[],100.0
+ev_4_0,hallucinated_citation,BLOCKED,0,['ev_999999_0'],100.0
+ev_4_0,uncited_claim,PASS WITH LIMITATIONS,0,[],0.0
+ev_5_0,well_grounded,PASS,0,[],100.0
+ev_5_0,hallucinated_citation,BLOCKED,0,['ev_999999_0'],100.0
+ev_5_0,uncited_claim,PASS WITH LIMITATIONS,0,[],0.0

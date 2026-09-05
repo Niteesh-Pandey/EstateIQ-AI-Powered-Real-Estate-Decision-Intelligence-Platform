@@ -1,0 +1,107 @@
+
+======================================================================
+1/14 Cleaning cities.csv
+======================================================================
+  -> saved cleaned/cities.csv
+
+======================================================================
+2/14 Cleaning developers.csv
+======================================================================
+  -> saved cleaned/developers.csv
+
+======================================================================
+3/14 Cleaning documents.csv
+======================================================================
+  - documents.csv: dropped 'embedding' column (was 100% empty)
+  -> saved cleaned/documents.csv
+
+======================================================================
+4/14 Cleaning economic_monthly.csv
+======================================================================
+  -> saved cleaned/economic_monthly.csv
+
+======================================================================
+5/14 Cleaning expenses.csv
+======================================================================
+  -> saved cleaned/expenses.csv
+
+======================================================================
+6/14 Cleaning infrastructure.csv
+======================================================================
+  -> saved cleaned/infrastructure.csv
+
+======================================================================
+7/14 Cleaning listing_history.csv
+======================================================================
+  - listing_history.csv: flagged 149 row(s) in 'asking_price' as statistical outliers (kept in data, just marked for review)
+  -> saved cleaned/listing_history.csv
+
+======================================================================
+8/14 Cleaning localities.csv
+======================================================================
+  -> saved cleaned/localities.csv
+
+======================================================================
+9/14 Cleaning market_monthly.csv
+======================================================================
+  - market_monthly.csv: flagged 578 row(s) in 'average_price_sqft' as statistical outliers (kept in data, just marked for review)
+  -> saved cleaned/market_monthly.csv
+
+======================================================================
+10/14 Cleaning projects.csv
+======================================================================
+  -> saved cleaned/projects.csv
+
+======================================================================
+11/14 Cleaning properties.csv
+======================================================================
+  - properties.csv: fixed 2752 row(s) where floor number was higher than the building's total floors (capped floor = total_floors)
+  - properties.csv: added 'is_for_rent' flag column (7840 for-rent, 160 not-for-rent) instead of guessing a missing rent value
+  - properties.csv: flagged 121 row(s) in 'asking_price' as statistical outliers (kept in data, just marked for review)
+  - properties.csv: column 'monthly_rent' has 160 missing value(s)
+  -> saved cleaned/properties.csv
+
+======================================================================
+12/14 Cleaning property_events.csv
+======================================================================
+  -> saved cleaned/property_events.csv
+
+======================================================================
+13/14 Cleaning rentals.csv
+======================================================================
+  - rentals.csv: flagged 133 row(s) in 'monthly_rent' as statistical outliers (kept in data, just marked for review)
+  -> saved cleaned/rentals.csv
+
+======================================================================
+14/14 Cleaning transactions.csv
+======================================================================
+  - transactions.csv: flagged 1668 row(s) in 'transaction_price' as statistical outliers (kept in data, just marked for review)
+  -> saved cleaned/transactions.csv
+
+======================================================================
+FINAL RE-CHECK OF ALL CLEANED FILES
+======================================================================
+  - cities.csv: 6 rows x 7 cols | duplicate rows = 0
+  - developers.csv: 40 rows x 7 cols | duplicate rows = 0
+  - documents.csv: 120 rows x 7 cols | duplicate rows = 0
+  - economic_monthly.csv: 72 rows x 7 cols | duplicate rows = 0
+  - expenses.csv: 8000 rows x 8 cols | duplicate rows = 0
+  - infrastructure.csv: 209 rows x 8 cols | duplicate rows = 0
+  - listing_history.csv: 12000 rows x 8 cols | duplicate rows = 0
+  - localities.csv: 90 rows x 12 cols | duplicate rows = 0
+  - market_monthly.csv: 6480 rows x 11 cols | duplicate rows = 0
+  - projects.csv: 500 rows x 11 cols | duplicate rows = 0
+  - properties.csv: 8000 rows x 15 cols | duplicate rows = 0
+  - property_events.csv: 25000 rows x 6 cols | duplicate rows = 0
+  - rentals.csv: 10000 rows x 7 cols | duplicate rows = 0
+  - transactions.csv: 20000 rows x 8 cols | duplicate rows = 0
+
+RECHECK RESULT: PASS - no duplicate rows remain in any file.
+
+======================================================================
+RELATIONSHIP RE-CHECK (foreign keys)
+======================================================================
+  - localities.city_id -> cities: OK
+  - projects.developer_id -> developers: OK
+  - projects.locality_id -> localities: OK
+  - properties.project_id -> projects: OK

@@ -1,0 +1,6 @@
+# Phase 1 — Data Engineering ke liye zaroori packages
+pandas==2.2.3
+numpy==2.1.2
+Faker==30.8.2
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1

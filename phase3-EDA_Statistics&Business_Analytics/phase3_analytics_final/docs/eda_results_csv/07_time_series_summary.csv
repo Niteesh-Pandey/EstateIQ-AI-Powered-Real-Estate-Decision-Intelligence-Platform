@@ -1,0 +1,6 @@
+section,value
+n_months_observed,72
+date_range,2020-01-01 to 2025-12-01
+price_summary,"{""as_of_month"": ""2025-12-01"", ""value"": 68724.5, ""mom_growth_pct"": 6.16, ""yoy_growth_pct"": 90.83, ""rolling_12m_avg"": 51141.74, ""rolling_12m_volatility_pct"": 0.63}"
+demand_summary,"{""as_of_month"": ""2025-12-01"", ""value"": 83.46, ""mom_growth_pct"": 0.54, ""yoy_growth_pct"": 3.92, ""rolling_12m_avg"": 81.78, ""rolling_12m_volatility_pct"": 0.21}"
+yearly_avg_price_sqft,"{""2020"": 10818.56, ""2021"": 12478.52, ""2022"": 15069.98, ""2023"": 20164.11, ""2024"": 29606.34, ""2025"": 51141.74}"

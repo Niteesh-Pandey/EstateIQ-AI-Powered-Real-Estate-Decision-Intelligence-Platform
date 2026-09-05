@@ -1,0 +1,7 @@
+child,fk,parent,orphan_count
+localities,city_id,cities,0
+projects,developer_id,developers,0
+projects,locality_id,localities,0
+properties,project_id,projects,0
+transactions,property_id,properties,0
+rentals,property_id,properties,0

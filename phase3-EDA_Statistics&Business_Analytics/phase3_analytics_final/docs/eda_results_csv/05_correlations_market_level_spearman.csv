@@ -1,0 +1,9 @@
+var1,var2,correlation,method,caveat
+demand_index,units_sold,0.881,spearman,Correlation does not imply causation. These are observed statistical associations only.
+demand_index,available_inventory,-0.755,spearman,Correlation does not imply causation. These are observed statistical associations only.
+demand_index,average_days_on_market,-0.688,spearman,Correlation does not imply causation. These are observed statistical associations only.
+units_sold,available_inventory,-0.671,spearman,Correlation does not imply causation. These are observed statistical associations only.
+average_price_sqft,average_days_on_market,-0.624,spearman,Correlation does not imply causation. These are observed statistical associations only.
+units_sold,average_days_on_market,-0.606,spearman,Correlation does not imply causation. These are observed statistical associations only.
+average_price_sqft,demand_index,0.542,spearman,Correlation does not imply causation. These are observed statistical associations only.
+available_inventory,average_days_on_market,0.523,spearman,Correlation does not imply causation. These are observed statistical associations only.

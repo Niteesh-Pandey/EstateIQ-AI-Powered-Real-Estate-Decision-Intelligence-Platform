@@ -1,0 +1,4 @@
+var1,var2,pearson_r,pearson_p,spearman_r,spearman_p,divergence,interpretation,caveat
+area_sqft,asking_price,0.838,0.0,0.881,0.0,0.043,Similar — relationship is roughly linear,Correlation does not imply causation. These are observed statistical associations only.
+demand_index,average_days_on_market,-0.69,0.0,-0.688,0.0,0.003,Similar — relationship is roughly linear,Correlation does not imply causation. These are observed statistical associations only.
+interest_rate,demand_index,-0.004,0.73147,-0.008,0.53336,0.003,Similar — relationship is roughly linear,Correlation does not imply causation. These are observed statistical associations only.

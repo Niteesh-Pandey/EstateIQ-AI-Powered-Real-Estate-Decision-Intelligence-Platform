@@ -1,0 +1,501 @@
+{
+  "valuation_v1_gbr": {
+    "model_name": "valuation_v1_gbr",
+    "target": "asking_price",
+    "features": [
+      "bedrooms",
+      "bathrooms",
+      "area_sqft",
+      "floor",
+      "total_floors",
+      "floor_ratio",
+      "age_years",
+      "parking",
+      "population_density",
+      "average_income",
+      "connectivity_score",
+      "safety_score",
+      "infrastructure_score",
+      "development_score",
+      "commercial_score",
+      "city_average_income",
+      "city_development_score",
+      "project_age_years",
+      "project_sellthrough_pct",
+      "developer_rating",
+      "developer_delivery_score",
+      "developer_quality_score",
+      "developer_track_record",
+      "developer_market_share",
+      "property_type_Penthouse",
+      "property_type_Row House",
+      "property_type_Studio",
+      "property_type_Villa",
+      "furnishing_Semi-Furnished",
+      "furnishing_Unfurnished",
+      "city_name_Chennai",
+      "city_name_Delhi NCR",
+      "city_name_Hyderabad",
+      "city_name_Mumbai",
+      "city_name_Pune",
+      "project_type_Residential",
+      "project_type_Villa Community",
+      "project_status_Nearing Completion",
+      "project_status_Under Construction"
+    ],
+    "n_features": 39,
+    "training_data": "core.properties joined to projects/localities/cities/developers (Phase 1 processed data), n=8000",
+    "validation_method": "Random 80/20 holdout split (seed=42); no time dimension in this target (asking_price is a point-in-time attribute, not a series) so temporal split is not applicable here -- documented explicitly, not omitted silently.",
+    "metrics": {
+      "r2": 0.7967,
+      "mae": 1286254.82,
+      "rmse": 2066291.01,
+      "mape_pct": 10.19,
+      "mean_residual": -48917.4,
+      "std_residual": 2065711.89,
+      "pct_within_10pct_of_actual": 58.8
+    },
+    "baseline": {
+      "naive_median": {
+        "r2": -0.0079,
+        "mae": 3481239.38,
+        "rmse": 4601168.93,
+        "mape_pct": 32.23
+      },
+      "linear_regression": {
+        "r2": 0.7992,
+        "mae": 1293128.68,
+        "rmse": 2053758.34,
+        "mape_pct": 10.52
+      },
+      "r2_gain_vs_linear_pct": -0.3
+    },
+    "status": "PASS WITH LIMITATIONS",
+    "limitations": [
+      "Trained on synthetic data (Phase 1 generator) -- structure is realistic but coefficients are not calibrated to a real market.",
+      "monthly_rent intentionally excluded as a feature to avoid circularity with Model B (rent prediction); this may leave some explainable price variance on the table.",
+      "asking_price (list price), not realized transaction_price, is the target -- consistent with Phase 3 EDA guidance to avoid the transaction_price generator bug (EDA Section 9/12).",
+      "0 feature cells were missing and median/'Unknown'-imputed before training; see docs/limitations.md for the full accounting."
+    ],
+    "business_use": "Screening-level valuation estimate for a property given its structural and locational attributes; feeds Phase 6 financial engine when no user-supplied purchase price exists, and Model G's valuation-gap risk component.",
+    "known_failure_cases": [
+      "Properties in localities/cities not present in training data cannot be scored (no locality features available) -- returns INSUFFICIENT DATA at the agent layer.",
+      "Extreme luxury properties (Phase 3 EDA: ~0.5% of listings carry a deliberate 2.5x premium multiplier) are legitimate outliers, not errors, but the model may under-predict this segment since it is a small minority of training rows."
+    ],
+    "version": "v1",
+    "registered_at_utc": "2026-09-03T15:15:29+00:00"
+  },
+  "rent_v1_gbr": {
+    "model_name": "rent_v1_gbr",
+    "target": "monthly_rent",
+    "features": [
+      "bedrooms",
+      "bathrooms",
+      "area_sqft",
+      "floor",
+      "total_floors",
+      "floor_ratio",
+      "age_years",
+      "parking",
+      "population_density",
+      "average_income",
+      "connectivity_score",
+      "safety_score",
+      "infrastructure_score",
+      "development_score",
+      "commercial_score",
+      "city_average_income",
+      "city_development_score",
+      "project_age_years",
+      "project_sellthrough_pct",
+      "developer_rating",
+      "developer_delivery_score",
+      "developer_quality_score",
+      "developer_track_record",
+      "developer_market_share",
+      "property_type_Penthouse",
+      "property_type_Row House",
+      "property_type_Studio",
+      "property_type_Villa",
+      "furnishing_Semi-Furnished",
+      "furnishing_Unfurnished",
+      "city_name_Chennai",
+      "city_name_Delhi NCR",
+      "city_name_Hyderabad",
+      "city_name_Mumbai",
+      "city_name_Pune",
+      "project_type_Residential",
+      "project_type_Villa Community",
+      "project_status_Nearing Completion",
+      "project_status_Under Construction"
+    ],
+    "n_features": 39,
+    "training_data": "core.properties (rows where monthly_rent was NOT imputed) joined to projects/localities/cities/developers, n=7840 (160 imputed rows excluded from training/eval)",
+    "validation_method": "Random 80/20 holdout split (seed=42); monthly_rent is a point-in-time attribute (not a series in properties.csv), so temporal split is not applicable -- documented, not omitted silently.",
+    "metrics": {
+      "r2": 0.651,
+      "mae": 6016.47,
+      "rmse": 7999.38,
+      "mape_pct": 18.78,
+      "mean_residual": 106.06,
+      "std_residual": 7998.68,
+      "pct_within_10pct_of_actual": 37.1
+    },
+    "baseline": {
+      "naive_median": {
+        "r2": -0.0186,
+        "mae": 10630.48,
+        "rmse": 13666.72,
+        "mape_pct": 36.96
+      },
+      "linear_regression": {
+        "r2": 0.6576,
+        "mae": 6010.24,
+        "rmse": 7923.4,
+        "mape_pct": 18.78
+      },
+      "r2_gain_vs_linear_pct": -1.0
+    },
+    "status": "PASS WITH LIMITATIONS",
+    "limitations": [
+      "Trained on synthetic data -- structure is realistic but not calibrated to a real market.",
+      "asking_price intentionally excluded as a feature to avoid circularity with Model A (valuation); both models are trained independently on structural/location signal only.",
+      "160 rows with generator-imputed monthly_rent (Phase 1 cleaning step) were excluded from training and evaluation to avoid learning an imputation rule as if it were real signal.",
+      "0 feature cells were missing and median/'Unknown'-imputed before training."
+    ],
+    "business_use": "Screening-level rent estimate for Phase 6 financial engine income assumptions when the user has not supplied an expected rent.",
+    "known_failure_cases": [
+      "Localities/cities absent from training data cannot be scored -- INSUFFICIENT DATA at the agent layer.",
+      "Furnishing-driven rent premiums may be under-fit if a furnishing category is rare in the training sample for a given locality."
+    ],
+    "version": "v1",
+    "registered_at_utc": "2026-09-03T15:20:43+00:00"
+  },
+  "price_forecast_v1_gbr_6m": {
+    "model_name": "price_forecast_v1_gbr_6m",
+    "target": "market_monthly.average_price_sqft, 6 months ahead (locality-level), modeled in log1p space",
+    "features": [
+      "log_average_price_sqft",
+      "log_price_sqft_lag1",
+      "log_price_sqft_lag3",
+      "log_price_sqft_lag6",
+      "log_price_sqft_roll3_avg",
+      "price_sqft_mom_growth",
+      "demand_index",
+      "demand_lag1",
+      "demand_lag3",
+      "demand_roll3_avg",
+      "supply_index",
+      "units_sold_lag1",
+      "absorption_lag1",
+      "dom_lag1",
+      "interest_rate",
+      "mortgage_rate",
+      "inflation",
+      "income_growth",
+      "average_income",
+      "connectivity_score",
+      "development_score"
+    ],
+    "n_features": 21,
+    "training_data": "market_monthly x economic_monthly x localities panel, train n=4320 (months < 2024-07-01), test n=1080 (months >= 2024-07-01, out-of-time)",
+    "validation_method": "Out-of-time split: trained on earlier months, evaluated on the most recent months (which are also the months most affected by the known compounding bug -- see docstring). This is a genuine forecast evaluation, not in-sample fit.",
+    "metrics": {
+      "log_space": {
+        "r2": 0.9836,
+        "mae": 0.04,
+        "rmse": 0.11,
+        "mape_pct": 0.31
+      },
+      "original_scale": {
+        "r2": 0.7113,
+        "mae": 13294.83,
+        "rmse": 94571.05,
+        "mape_pct": 3.42
+      }
+    },
+    "baseline": {
+      "persistence_log_space": {
+        "r2": 0.9738,
+        "mae": 0.09,
+        "rmse": 0.14,
+        "mape_pct": 0.87
+      },
+      "persistence_original_scale": {
+        "r2": 0.8293,
+        "mae": 13406.87,
+        "rmse": 72721.57,
+        "mape_pct": 8.49
+      },
+      "beats_persistence_baseline_log_r2": true
+    },
+    "status": "CONDITIONAL",
+    "limitations": [
+      "CRITICAL: market_monthly.average_price_sqft carries a known, traced data-generation bug (uncapped monthly compounding -- Phase 3 EDA Section 9/12). This model's target is therefore partly a generator artifact, not a real market signal. Forced status = CONDITIONAL regardless of R2/MAPE obtained.",
+      "The original data generator script was not included in the Phase 1-3 deliverables provided to Phase 4, so 'fix at source and regenerate' (the preferred remedy per Section 4.6) was not possible in this phase. Log1p-transformation was used as the documented fallback treatment.",
+      "MAPE on the original (non-log) scale can be extremely large for the small number of localities where the compounding effect is most severe -- report the log-space metrics as primary; original-scale metrics are provided for transparency, not as the headline number.",
+      "Recommended follow-up: regenerate Phase 1 data with a growth ceiling/mean-reversion term, then retrain this model before any production use."
+    ],
+    "business_use": "Directional (not point-precision) 6-month price/sqft momentum signal for the Decision Engine's market-momentum component. Must be surfaced to users with the CONDITIONAL caveat, never as a precise price target.",
+    "known_failure_cases": [
+      "Localities exhibiting the extreme compounding pattern will have understated forecasts (the model partially, not fully, learns the exponential trend) -- systematic under-forecast risk in the highest-growth localities.",
+      "New localities with fewer than 6 months of history cannot be scored (lag features undefined) -- INSUFFICIENT DATA at the agent layer."
+    ],
+    "version": "v1",
+    "registered_at_utc": "2026-09-03T15:23:42+00:00"
+  },
+  "demand_forecast_v1_gbr_6m": {
+    "model_name": "demand_forecast_v1_gbr_6m",
+    "target": "market_monthly.demand_index, 6 months ahead (locality-level)",
+    "features": [
+      "demand_index",
+      "demand_lag1",
+      "demand_lag3",
+      "demand_roll3_avg",
+      "supply_index",
+      "average_price_sqft",
+      "price_sqft_mom_growth",
+      "units_sold_lag1",
+      "absorption_lag1",
+      "dom_lag1",
+      "interest_rate",
+      "mortgage_rate",
+      "inflation",
+      "income_growth",
+      "average_income",
+      "connectivity_score",
+      "development_score",
+      "commercial_score"
+    ],
+    "n_features": 18,
+    "training_data": "market_monthly x economic_monthly x localities panel, train n=4590 (months < 2024-07-01), test n=1080 (months >= 2024-07-01, out-of-time)",
+    "validation_method": "Out-of-time split: trained on earlier months, evaluated on the most recent months. Compared against a persistence baseline (demand in 6 months = demand now).",
+    "metrics": {
+      "r2": 0.9321,
+      "mae": 2.96,
+      "rmse": 3.73,
+      "mape_pct": 3.79
+    },
+    "baseline": {
+      "persistence": {
+        "r2": 0.933,
+        "mae": 2.88,
+        "rmse": 3.7,
+        "mape_pct": 3.7
+      },
+      "beats_persistence": false
+    },
+    "status": "CONDITIONAL",
+    "limitations": [
+      "Trained on synthetic data; demand_index itself is a generator-defined composite, not an observed real-world index.",
+      "Phase 3 EDA found interest_rate has a designed effect on demand in the generator (-0.6 per point) but this is NOT statistically detectable in the cross-sectional data (r=-0.004, p=0.73) -- interest_rate is included as a feature but may contribute little signal; kept for completeness/robustness rather than removed.",
+      "New localities with fewer than 6 months of history cannot be scored.",
+      "Status forced to CONDITIONAL rather than the higher tier its raw R2 would suggest: the model does not beat a trivial persistence baseline (model R2=0.9321 vs baseline R2=0.933). Treat as a candidate signal requiring human review before production use, not an approved, value-adding forecast."
+    ],
+    "business_use": "Directional demand-momentum signal for the Decision Engine's market score component (Phase 9) and for locality screening in Phase 8 (Geo Intelligence).",
+    "known_failure_cases": [
+      "Localities with fewer than 6 months of history: INSUFFICIENT DATA.",
+      "Demand shocks not present in the training window (e.g. a sudden new-infrastructure announcement) will not be anticipated -- the model extrapolates from historical patterns only."
+    ],
+    "version": "v1",
+    "registered_at_utc": "2026-09-03T15:28:17+00:00"
+  },
+  "dom_v1_gbr": {
+    "model_name": "dom_v1_gbr",
+    "target": "days_on_market",
+    "features": [
+      "bedrooms",
+      "bathrooms",
+      "area_sqft",
+      "floor",
+      "total_floors",
+      "floor_ratio",
+      "age_years",
+      "parking",
+      "population_density",
+      "average_income",
+      "connectivity_score",
+      "safety_score",
+      "infrastructure_score",
+      "development_score",
+      "commercial_score",
+      "city_average_income",
+      "city_development_score",
+      "project_age_years",
+      "project_sellthrough_pct",
+      "developer_rating",
+      "developer_delivery_score",
+      "developer_quality_score",
+      "developer_track_record",
+      "developer_market_share",
+      "property_type_Penthouse",
+      "property_type_Row House",
+      "property_type_Studio",
+      "property_type_Villa",
+      "furnishing_Semi-Furnished",
+      "furnishing_Unfurnished",
+      "city_name_Chennai",
+      "city_name_Delhi NCR",
+      "city_name_Hyderabad",
+      "city_name_Mumbai",
+      "city_name_Pune",
+      "project_type_Residential",
+      "project_type_Villa Community",
+      "project_status_Nearing Completion",
+      "project_status_Under Construction"
+    ],
+    "n_features": 39,
+    "training_data": "listing_history (closed listings: Sold/Expired/Withdrawn only; 'Active' listings excluded as censored/unknown-outcome) joined to property/locality/developer context, n=7790",
+    "validation_method": "Random 80/20 holdout split (seed=42), compared to naive median baseline. Independently re-verifies the Phase 3 EDA finding (R2 approx -0.04, NEEDS_INVESTIGATION / confirmed_weak_signal) rather than assuming it.",
+    "metrics": {
+      "r2": -0.0102,
+      "mae": 35.35,
+      "rmse": 43.06,
+      "mape_pct": 161.66
+    },
+    "baseline": {
+      "naive_median": {
+        "r2": -0.0005,
+        "mae": 35.25,
+        "rmse": 42.85,
+        "mape_pct": 158.49
+      }
+    },
+    "status": "REJECTED",
+    "limitations": [
+      "Confirms Phase 3 EDA finding: days_on_market has no recoverable structure from the features available in this dataset (property attributes, locality scores, developer scores). The generator does not appear to encode a strong, learnable DOM signal from these inputs.",
+      "This does NOT mean days-on-market is unpredictable in reality -- it means this particular synthetic dataset does not carry a learnable DOM signal from the available features. A future data-regeneration phase would need to add genuine DOM drivers (e.g. pricing-vs-market-median gap, listing-channel quality, seasonality effects) before this model could be usefully retrained."
+    ],
+    "business_use": "NONE while status=REJECTED -- must not be surfaced to end users or consumed by the Phase 9 Prediction Agent. Retained in the registry (not deleted) so the rejection and its evidence remain auditable.",
+    "known_failure_cases": [
+      "All predictions -- the model has no demonstrated predictive validity; do not use for any business decision in its current state."
+    ],
+    "version": "v1",
+    "registered_at_utc": "2026-09-03T15:31:51+00:00"
+  },
+  "sale_probability_v1_gbr": {
+    "model_name": "sale_probability_v1_gbr",
+    "target": "listing_history.status binarized (Sold=1 vs Expired/Withdrawn=0); 'Active' listings excluded (censored outcome)",
+    "features": [
+      "bedrooms",
+      "bathrooms",
+      "area_sqft",
+      "floor",
+      "total_floors",
+      "floor_ratio",
+      "age_years",
+      "parking",
+      "population_density",
+      "average_income",
+      "connectivity_score",
+      "safety_score",
+      "infrastructure_score",
+      "development_score",
+      "commercial_score",
+      "city_average_income",
+      "city_development_score",
+      "project_age_years",
+      "project_sellthrough_pct",
+      "developer_rating",
+      "developer_delivery_score",
+      "developer_quality_score",
+      "developer_track_record",
+      "developer_market_share",
+      "property_type_Penthouse",
+      "property_type_Row House",
+      "property_type_Studio",
+      "property_type_Villa",
+      "furnishing_Semi-Furnished",
+      "furnishing_Unfurnished",
+      "city_name_Chennai",
+      "city_name_Delhi NCR",
+      "city_name_Hyderabad",
+      "city_name_Mumbai",
+      "city_name_Pune",
+      "project_type_Residential",
+      "project_type_Villa Community",
+      "project_status_Nearing Completion",
+      "project_status_Under Construction"
+    ],
+    "n_features": 39,
+    "training_data": "listing_history (closed listings only) joined to property/locality/developer context, n=7790, base rate (sold)=0.612",
+    "validation_method": "Stratified random 80/20 holdout split (seed=42). Compared to a constant base-rate baseline and a logistic regression baseline. Calibration assessed via 10-bin quantile calibration curve.",
+    "metrics": {
+      "roc_auc": 0.5196,
+      "pr_auc": 0.6212,
+      "brier_score": 0.2403,
+      "accuracy_at_0.5": 0.6091,
+      "base_rate_positive": 0.6123,
+      "calibration_gap": 0.046
+    },
+    "baseline": {
+      "constant_base_rate": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.6123,
+        "brier_score": 0.2374,
+        "accuracy_at_0.5": 0.6123,
+        "base_rate_positive": 0.6123
+      },
+      "logistic_regression": {
+        "roc_auc": 0.5078,
+        "pr_auc": 0.6253,
+        "brier_score": 0.2375,
+        "accuracy_at_0.5": 0.6123,
+        "base_rate_positive": 0.6123
+      }
+    },
+    "status": "REJECTED",
+    "limitations": [
+      "Trained on synthetic data; 'sold' outcome is generator-determined, not from a real market.",
+      "'Active' (still-open) listings are excluded from training as their true outcome is not yet known -- the model has not seen the most recent listings and may not reflect very recent market shifts.",
+      "Sale probability here reflects whether a listing SOLD at all before expiring/withdrawal, not the probability of selling within any specific time window."
+    ],
+    "business_use": "Liquidity/exit-risk signal for the Decision Engine (Phase 9) -- a property in a locality/segment with historically low sale-through probability increases exit risk in the financial and risk intelligence layers (Phase 6/7).",
+    "known_failure_cases": [
+      "Listings in localities/segments rare in the training data will have less reliable probability estimates.",
+      "Model does not account for listing price relative to market (asking_price is not a feature here to keep this model consistent with -- and independent of -- Model A's valuation-gap signal, which is a separate, dedicated feature in the Decision Engine)."
+    ],
+    "version": "v1",
+    "registered_at_utc": "2026-09-03T15:34:39+00:00"
+  },
+  "risk_score_v1_composite": {
+    "model_name": "risk_score_v1_composite",
+    "target": "risk_score (0-100 composite, higher = more risk); risk_band (LOW/MODERATE/ELEVATED/HIGH)",
+    "features": [
+      "valuation_uncertainty_risk",
+      "developer_risk",
+      "locality_quality_risk",
+      "market_liquidity_risk",
+      "price_volatility_risk"
+    ],
+    "n_features": 5,
+    "training_data": "Deterministic composite over property_master + locality_month_panel, n=8000 properties scored. Not a trained/fitted model -- weights are fixed business rules, not learned parameters.",
+    "validation_method": "No train/test split (not a fitted model). Internal consistency checks: each sub-component min-max normalized to 0-100 on the current dataset; weights sum to 1.0 (assert in code); output distribution inspected for sanity (band_distribution below).",
+    "metrics": {
+      "n_scored": 8000,
+      "mean_risk_score": 35.52,
+      "median_risk_score": 35.05,
+      "band_distribution_pct": {
+        "MODERATE": 70.7,
+        "LOW": 27.400000000000002,
+        "ELEVATED": 1.7999999999999998
+      }
+    },
+    "baseline": null,
+    "status": "UNCALIBRATED",
+    "limitations": [
+      "This composite has NOT been validated against real historical investment outcomes -- there is no ground-truth 'was this property/locality actually risky' label in a synthetic dataset to calibrate against.",
+      "Weights (0.25 / 0.20 / 0.20 / 0.20 / 0.15) are business judgment, not statistically fitted -- documented explicitly rather than presented as learned/optimal.",
+      "Min-max normalization is dataset-relative: the LOWEST-risk property in this dataset still gets some non-zero-relative score if all properties in a given city/locality are structurally similar. Scores are a RELATIVE ranking tool, not an absolute probability of loss.",
+      "Deliberately excludes Model E (dom_v1_gbr, REJECTED) and Model F (sale_probability_v1_gbr, REJECTED) as direct inputs, per the Phase 9 agent contract rule that rejected model outputs must not be consumed downstream.",
+      "price_volatility_risk inherits Model C's known data-generation-bug caveat for the minority of localities with runaway compounding (Phase 3 EDA Section 9) -- see Model C's registry entry."
+    ],
+    "business_use": "Relative risk ranking of properties for the Decision Engine's risk-score component (Phase 9) and as an input candidate to Phase 7's Monte Carlo risk driver identification. Must be presented to users as a RANKING, never as a calibrated probability, until backtested against real outcomes.",
+    "known_failure_cases": [
+      "Properties in a locality with only one project/developer will show artificially compressed developer_risk/locality_quality_risk spread (min-max normalization has little to work with in a small comparison set).",
+      "New localities added after this run require re-computation (min-max bounds are computed over the current dataset snapshot, not fixed constants)."
+    ],
+    "version": "v1",
+    "registered_at_utc": "2026-09-03T15:39:14+00:00"
+  }
+}

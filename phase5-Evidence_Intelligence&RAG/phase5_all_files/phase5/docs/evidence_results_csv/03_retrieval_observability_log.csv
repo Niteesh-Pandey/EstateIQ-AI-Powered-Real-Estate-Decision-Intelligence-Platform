@@ -1,0 +1,7 @@
+timestamp_utc,query,filters,latency_ms,result_count,zero_results,top_evidence_id,top_source,top_confidence,top_score
+2026-09-04T04:21:21+00:00,infrastructure connectivity Pune,{'city': 'Pune'},53.17,10,False,ev_35_0,News,0.6,1.0
+2026-09-04T04:21:21+00:00,developer track record,{},28.64,10,False,ev_21_0,News,0.6,1.0
+2026-09-04T04:21:21+00:00,policy regulatory outlook,{'topic': 'Policy/Regulatory Note'},29.15,10,False,ev_47_0,News,0.6,0.9857
+2026-09-04T04:21:21+00:00,investment memo outlook Mumbai,{'city': 'Mumbai'},32.75,10,False,ev_43_0,Internal Research,0.85,1.0
+2026-09-04T04:21:21+00:00,locality deep dive Hyderabad,{'city': 'Hyderabad'},31.16,10,False,ev_39_0,News,0.6,1.0
+2026-09-04T04:21:21+00:00,nonexistent gibberish query zzqx,{},24.52,0,True,,,,

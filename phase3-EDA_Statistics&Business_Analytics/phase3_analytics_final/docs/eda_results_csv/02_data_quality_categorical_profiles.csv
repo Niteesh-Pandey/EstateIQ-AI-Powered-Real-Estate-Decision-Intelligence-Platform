@@ -1,0 +1,7 @@
+row_count,non_null_count,cardinality,null_count,null_pct,dominant_category,dominant_category_pct,table,column
+8000,8000,5,0,0.0,Apartment,55.61,properties,property_type
+8000,8000,3,0,0.0,Unfurnished,45.35,properties,furnishing
+12000,12000,4,0,0.0,Sold,39.73,listing_history,status
+20000,20000,3,0,0.0,End User,59.55,transactions,buyer_type
+20000,20000,2,0,0.0,Resale,59.41,transactions,transaction_type
+500,500,3,0,0.0,Under Construction,41.2,projects,project_status
