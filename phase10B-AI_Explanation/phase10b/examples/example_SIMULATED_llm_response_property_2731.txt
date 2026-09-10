@@ -1,0 +1,20 @@
+*** SIMULATED FOR ILLUSTRATION ONLY -- NOT A REAL GEMINI API RESPONSE ***
+No GEMINI_API_KEY was available in this build sandbox. This file shows a
+hand-written, plausible LLM-style response run through the REAL fidelity
+validator, to demonstrate the mechanism end-to-end.
+======================================================================
+
+Fidelity check result: source=llm, passed=True
+Matched protected numbers: 7/10
+
+DECISION: INVEST
+
+This property clears the platform's INVEST bar with a decision score of 69.2/100 and a decision confidence of 81.7/100.
+
+Why: the base-case financial projection shows an IRR of 17.8% and an NPV of ₹9,157,773 over a 5-year hold, and the property appears modestly underpriced relative to the model's valuation estimate. The locality shows strong demand (index 54.7/100 location score).
+
+Risk picture: Monte Carlo simulation puts the probability of a negative NPV at 0% under the modeled assumptions. This risk simulation is UNCALIBRATED -- its distribution bounds are documented judgement calls, not fitted to real historical outcomes -- so treat this figure directionally, not as a precise real-world probability.
+
+Location: flood and environmental risk data are not available for this locality in the current platform -- this is a data gap, not a finding of zero risk.
+
+Recommended next actions: proceed to legal and technical due diligence, and confirm the financial assumptions listed in the platform output with the seller or listing agent before finalizing.

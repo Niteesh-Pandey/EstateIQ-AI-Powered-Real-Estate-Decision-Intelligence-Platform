@@ -1,0 +1,34 @@
+Source: deterministic_fallback
+Fallback reason: No GEMINI_API_KEY available -- no LLM call attempted. Using Phase 9's deterministic template rather than guessing at an explanation.
+======================================================================
+
+DECISION: INSUFFICIENT (property_id=1)
+Decision score: 37.5/100 | Decision confidence: 49.2/100
+
+Key reasons:
+  - Locality 74: demand index 60.4, supply index 22.0, absorption rate 0.56 (as of 2025-12-01).
+  - Location score 45.9/100.
+  - Model-predicted valuation is -2.8% vs. asking price.
+
+Key risks:
+  - Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+
+Critical assumptions used:
+  - vacancy_rate (defaulted to 0.0 -- no property-level or caller vacancy data)
+  - annual_operating_expenses
+  - appreciation_rate (locality historical CAGR exists but is flagged unreliable -- see data_loader)
+
+Conditions on this decision:
+  - Critical gate(s) not met: ['financial_analysis_available'].
+
+Recommended next actions:
+  - Resolve the failed critical gate(s) above, or supply the missing inputs directly, before this property can receive an INVEST/HOLD/AVOID decision.
+
+Limitations:
+  - Decision score components unavailable: ['financial_score', 'risk_score'].
+  - Base case could not be resolved; Monte Carlo requires a valid, fully-resolved starting point (same reasoning as Phase 6 scenarios/sensitivity).
+  - Accessibility score is based on partial infrastructure data for this locality (missing transit and/or commercial infrastructure records) -- see accessibility.components / accessibility.detail.
+  - flood_risk and environmental_risk are INSUFFICIENT DATA for every locality in this platform -- no hazard/environmental data source exists yet (see docs/limitations.md).
+  - Evidence validation status: PASS WITH LIMITATIONS.
+
+Data quality: PASS | Model status: PASS WITH LIMITATIONS | Evidence status: PASS WITH LIMITATIONS

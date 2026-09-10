@@ -1,0 +1,27 @@
+Source: deterministic_fallback
+Fallback reason: No GEMINI_API_KEY available -- no LLM call attempted. Using Phase 9's deterministic template rather than guessing at an explanation.
+======================================================================
+
+DECISION: INVEST (property_id=2731)
+Decision score: 69.2/100 | Decision confidence: 81.7/100
+
+Key reasons:
+  - Base-case IRR 17.8%, NPV ₹9,157,773 (5-year hold).
+  - Locality 32: demand index 95.2, supply index 54.2, absorption rate 3.33 (as of 2025-12-01).
+  - Location score 54.7/100.
+  - Model-predicted valuation is +6.0% vs. asking price.
+
+Key risks:
+  - 0% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+  - Top simulated risk driver: appreciation.
+  - Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+
+Recommended next actions:
+  - Proceed to legal/technical due diligence; confirm assumptions listed above with the seller/agent before finalizing.
+
+Limitations:
+  - Distributions are UNCALIBRATED (documented judgement-call bounds, not fitted to real historical outcomes) -- see Phase 7 docs/limitations.md. Do not present these probabilities as real-world probabilities.
+  - flood_risk and environmental_risk are INSUFFICIENT DATA for every locality in this platform -- no hazard/environmental data source exists yet (see docs/limitations.md).
+  - Evidence validation status: PASS WITH LIMITATIONS.
+
+Data quality: PASS | Model status: PASS WITH LIMITATIONS | Evidence status: PASS WITH LIMITATIONS

@@ -1,0 +1,180 @@
+property_id,type,text
+1,reason,"Locality 74: demand index 60.4, supply index 22.0, absorption rate 0.56 (as of 2025-12-01)."
+1,reason,Location score 45.9/100.
+1,reason,Model-predicted valuation is -2.8% vs. asking price.
+1,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+2731,reason,"Base-case IRR 17.8%, NPV ₹9,157,773 (5-year hold)."
+2731,reason,"Locality 32: demand index 95.2, supply index 54.2, absorption rate 3.33 (as of 2025-12-01)."
+2731,reason,Location score 54.7/100.
+2731,reason,Model-predicted valuation is +6.0% vs. asking price.
+2731,risk,0% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+2731,risk,Top simulated risk driver: appreciation.
+2731,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5053,reason,"Base-case IRR 16.9%, NPV ₹6,096,256 (5-year hold)."
+5053,reason,"Locality 85: demand index 98.3, supply index 54.3, absorption rate 6.65 (as of 2025-12-01)."
+5053,reason,Location score 65.1/100.
+5053,reason,Model-predicted valuation is -9.8% vs. asking price.
+5053,risk,0% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5053,risk,Top simulated risk driver: appreciation.
+5053,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+7622,reason,"Base-case IRR 12.5%, NPV ₹1,919,739 (5-year hold)."
+7622,reason,"Locality 46: demand index 73.7, supply index 34.8, absorption rate 0.50 (as of 2025-12-01)."
+7622,reason,Location score 51.0/100.
+7622,reason,Model-predicted valuation is +9.6% vs. asking price.
+7622,risk,18% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+7622,risk,Top simulated risk driver: appreciation.
+7622,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5923,reason,"Base-case IRR 2.2%, NPV ₹-4,356,237 (5-year hold)."
+5923,reason,"Locality 86: demand index 77.4, supply index 69.5, absorption rate 1.94 (as of 2025-12-01)."
+5923,reason,Location score 48.7/100.
+5923,reason,Model-predicted valuation is -17.5% vs. asking price.
+5923,risk,100% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5923,risk,Top simulated risk driver: appreciation.
+5923,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5342,reason,"Base-case IRR 16.6%, NPV ₹3,585,862 (5-year hold)."
+5342,reason,"Locality 82: demand index 83.3, supply index 51.7, absorption rate 3.40 (as of 2025-12-01)."
+5342,reason,Location score 52.4/100.
+5342,reason,Model-predicted valuation is +7.0% vs. asking price.
+5342,risk,0% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5342,risk,Top simulated risk driver: appreciation.
+5342,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+3559,reason,"Base-case IRR 11.5%, NPV ₹1,061,370 (5-year hold)."
+3559,reason,"Locality 17: demand index 98.3, supply index 68.3, absorption rate 5.70 (as of 2025-12-01)."
+3559,reason,Location score 62.5/100.
+3559,reason,Model-predicted valuation is +0.8% vs. asking price.
+3559,risk,28% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+3559,risk,Top simulated risk driver: appreciation.
+3559,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+1256,reason,"Base-case IRR -1.4%, NPV ₹-2,846,179 (5-year hold)."
+1256,reason,"Locality 24: demand index 59.5, supply index 46.5, absorption rate 0.69 (as of 2025-12-01)."
+1256,reason,Location score 51.5/100.
+1256,reason,Model-predicted valuation is -1.1% vs. asking price.
+1256,risk,100% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+1256,risk,Top simulated risk driver: appreciation.
+1256,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5691,reason,"Base-case IRR 14.9%, NPV ₹2,967,608 (5-year hold)."
+5691,reason,"Locality 65: demand index 78.1, supply index 48.5, absorption rate 1.26 (as of 2025-12-01)."
+5691,reason,Location score 38.8/100.
+5691,reason,Model-predicted valuation is +0.2% vs. asking price.
+5691,risk,1% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5691,risk,Top simulated risk driver: appreciation.
+5691,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5354,reason,"Base-case IRR 2.4%, NPV ₹-3,070,450 (5-year hold)."
+5354,reason,"Locality 16: demand index 52.3, supply index 41.0, absorption rate 0.37 (as of 2025-12-01)."
+5354,reason,Location score 42.7/100.
+5354,reason,Model-predicted valuation is +17.5% vs. asking price.
+5354,risk,100% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5354,risk,Top simulated risk driver: appreciation.
+5354,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+7672,reason,"Base-case IRR 12.0%, NPV ₹1,965,557 (5-year hold)."
+7672,reason,"Locality 22: demand index 99.0, supply index 69.1, absorption rate 2.54 (as of 2025-12-01)."
+7672,reason,Location score 50.1/100.
+7672,reason,Model-predicted valuation is -6.1% vs. asking price.
+7672,risk,22% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+7672,risk,Top simulated risk driver: appreciation.
+7672,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+195,reason,"Base-case IRR -1.9%, NPV ₹-6,004,775 (5-year hold)."
+195,reason,"Locality 24: demand index 59.5, supply index 46.5, absorption rate 0.69 (as of 2025-12-01)."
+195,reason,Location score 51.5/100.
+195,reason,Model-predicted valuation is +3.8% vs. asking price.
+195,risk,100% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+195,risk,Top simulated risk driver: appreciation.
+195,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+6007,reason,"Base-case IRR 14.6%, NPV ₹5,138,593 (5-year hold)."
+6007,reason,"Locality 37: demand index 67.0, supply index 45.9, absorption rate 1.01 (as of 2025-12-01)."
+6007,reason,Location score 50.2/100.
+6007,reason,Model-predicted valuation is +2.2% vs. asking price.
+6007,risk,2% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+6007,risk,Top simulated risk driver: appreciation.
+6007,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5842,reason,"Base-case IRR 11.6%, NPV ₹775,910 (5-year hold)."
+5842,reason,"Locality 87: demand index 79.5, supply index 44.3, absorption rate 1.33 (as of 2025-12-01)."
+5842,reason,Location score 58.0/100.
+5842,reason,Model-predicted valuation is +37.1% vs. asking price.
+5842,risk,26% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5842,risk,Top simulated risk driver: appreciation.
+5842,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+26,reason,"Base-case IRR 16.9%, NPV ₹6,962,290 (5-year hold)."
+26,reason,"Locality 38: demand index 76.4, supply index 32.6, absorption rate 1.84 (as of 2025-12-01)."
+26,reason,Location score 52.0/100.
+26,reason,Model-predicted valuation is +7.4% vs. asking price.
+26,risk,0% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+26,risk,Top simulated risk driver: appreciation.
+26,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5648,reason,"Base-case IRR 12.6%, NPV ₹1,772,328 (5-year hold)."
+5648,reason,"Locality 46: demand index 73.7, supply index 34.8, absorption rate 0.50 (as of 2025-12-01)."
+5648,reason,Location score 51.0/100.
+5648,reason,Model-predicted valuation is -15.0% vs. asking price.
+5648,risk,16% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5648,risk,Top simulated risk driver: appreciation.
+5648,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+1647,reason,"Base-case IRR 18.5%, NPV ₹11,091,217 (5-year hold)."
+1647,reason,"Locality 32: demand index 95.2, supply index 54.2, absorption rate 3.33 (as of 2025-12-01)."
+1647,reason,Location score 54.7/100.
+1647,reason,Model-predicted valuation is -13.9% vs. asking price.
+1647,risk,0% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+1647,risk,Top simulated risk driver: appreciation.
+1647,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+7944,reason,"Base-case IRR 14.8%, NPV ₹2,650,590 (5-year hold)."
+7944,reason,"Locality 47: demand index 95.5, supply index 53.1, absorption rate 6.00 (as of 2025-12-01)."
+7944,reason,Location score 54.1/100.
+7944,reason,Model-predicted valuation is +7.1% vs. asking price.
+7944,risk,1% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+7944,risk,Top simulated risk driver: appreciation.
+7944,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5177,reason,"Base-case IRR 10.7%, NPV ₹285,505 (5-year hold)."
+5177,reason,"Locality 84: demand index 62.1, supply index 23.6, absorption rate 0.36 (as of 2025-12-01)."
+5177,reason,Location score 46.6/100.
+5177,reason,Model-predicted valuation is +5.7% vs. asking price.
+5177,risk,41% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5177,risk,Top simulated risk driver: appreciation.
+5177,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+4043,reason,"Base-case IRR 14.8%, NPV ₹4,069,208 (5-year hold)."
+4043,reason,"Locality 47: demand index 95.5, supply index 53.1, absorption rate 6.00 (as of 2025-12-01)."
+4043,reason,Location score 54.1/100.
+4043,reason,Model-predicted valuation is +3.5% vs. asking price.
+4043,risk,1% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+4043,risk,Top simulated risk driver: appreciation.
+4043,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+6644,reason,"Base-case IRR 0.4%, NPV ₹-3,237,939 (5-year hold)."
+6644,reason,"Locality 39: demand index 79.4, supply index 76.1, absorption rate 3.58 (as of 2025-12-01)."
+6644,reason,Location score 50.1/100.
+6644,reason,Model-predicted valuation is +18.1% vs. asking price.
+6644,risk,100% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+6644,risk,Top simulated risk driver: appreciation.
+6644,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+1084,reason,"Base-case IRR -0.2%, NPV ₹-5,628,181 (5-year hold)."
+1084,reason,"Locality 24: demand index 59.5, supply index 46.5, absorption rate 0.69 (as of 2025-12-01)."
+1084,reason,Location score 51.5/100.
+1084,reason,Model-predicted valuation is -3.0% vs. asking price.
+1084,risk,100% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+1084,risk,Top simulated risk driver: appreciation.
+1084,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+6687,reason,"Base-case IRR 14.1%, NPV ₹3,571,692 (5-year hold)."
+6687,reason,"Locality 48: demand index 87.6, supply index 72.9, absorption rate 1.18 (as of 2025-12-01)."
+6687,reason,Location score 56.7/100.
+6687,reason,Model-predicted valuation is +3.0% vs. asking price.
+6687,risk,4% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+6687,risk,Top simulated risk driver: appreciation.
+6687,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+7269,reason,"Base-case IRR 5.1%, NPV ₹-2,834,711 (5-year hold)."
+7269,reason,"Locality 75: demand index 69.4, supply index 58.3, absorption rate 1.34 (as of 2025-12-01)."
+7269,reason,Location score 46.9/100.
+7269,reason,Model-predicted valuation is +10.3% vs. asking price.
+7269,risk,100% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+7269,risk,Top simulated risk driver: appreciation.
+7269,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+5565,reason,"Base-case IRR -0.1%, NPV ₹-5,380,779 (5-year hold)."
+5565,reason,"Locality 49: demand index 51.8, supply index 40.0, absorption rate 0.46 (as of 2025-12-01)."
+5565,reason,Location score 47.5/100.
+5565,reason,Model-predicted valuation is +9.9% vs. asking price.
+5565,risk,100% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+5565,risk,Top simulated risk driver: appreciation.
+5565,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).
+1239,reason,"Base-case IRR 16.5%, NPV ₹6,539,969 (5-year hold)."
+1239,reason,"Locality 82: demand index 83.3, supply index 51.7, absorption rate 3.40 (as of 2025-12-01)."
+1239,reason,Location score 52.4/100.
+1239,reason,Model-predicted valuation is -4.4% vs. asking price.
+1239,risk,0% simulated probability of negative NPV (UNCALIBRATED -- see limitations).
+1239,risk,Top simulated risk driver: appreciation.
+1239,risk,Flood/environmental risk data is not available for this locality (not a zero-risk finding -- simply unmeasured).

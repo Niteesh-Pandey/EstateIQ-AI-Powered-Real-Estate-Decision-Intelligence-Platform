@@ -1,0 +1,12 @@
+phase,metric,value,status
+Phase 1 - Data Foundation,Referential integrity violations,0,PASS
+Phase 4 - Predictive Models,Models PASS/PASS WITH LIMITATIONS,2,PASS
+Phase 4 - Predictive Models,Models CONDITIONAL,2,CONDITIONAL
+Phase 4 - Predictive Models,Models REJECTED,2,REJECTED
+Phase 5 - Evidence/RAG,Prompt injection false positives (120-doc corpus),0,PASS
+Phase 6 - Financial,Portfolio with full expense+rental history,44.5,PASS WITH LIMITATIONS
+Phase 6 - Financial,Localities with unreliable appreciation CAGR (>20%/yr),13,PASS WITH LIMITATIONS
+Phase 7 - Risk,Monte Carlo calibration status,UNCALIBRATED,UNCALIBRATED
+Phase 8 - Geo,Localities missing flood/environmental data,90,INSUFFICIENT DATA
+Phase 8 - Geo,Localities PASS (full infra coverage),31,PASS
+Phase 9 - Decision,Mean decision confidence ceiling,81.7,PASS WITH LIMITATIONS

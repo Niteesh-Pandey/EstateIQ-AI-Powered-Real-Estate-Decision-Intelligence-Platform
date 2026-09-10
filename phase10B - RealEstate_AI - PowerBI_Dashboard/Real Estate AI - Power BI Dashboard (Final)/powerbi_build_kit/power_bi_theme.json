@@ -1,0 +1,81 @@
+{
+  "name": "RealEstateAI_DecisionIntelligence",
+  "dataColors": [
+    "#D9A85C",
+    "#5B9BD9",
+    "#4FAE84",
+    "#D9695C",
+    "#93A2B3",
+    "#5D6B7C",
+    "#E7EDF3",
+    "#182029"
+  ],
+  "background": "#0B0F14",
+  "foreground": "#E7EDF3",
+  "tableAccent": "#D9A85C",
+  "good": "#4FAE84",
+  "bad": "#D9695C",
+  "neutral": "#D9A85C",
+  "maximum": "#4FAE84",
+  "center": "#D9A85C",
+  "minimum": "#D9695C",
+  "null": "#5D6B7C",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#131A22" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#263140" } }, "radius": 0 }],
+        "title": [
+          {
+            "fontColor": { "solid": { "color": "#E7EDF3" } },
+            "background": { "solid": { "color": "#131A22" } },
+            "fontSize": 13,
+            "bold": true
+          }
+        ],
+        "subTitle": [{ "fontColor": { "solid": { "color": "#5D6B7C" } }, "fontSize": 11 }],
+        "categoryAxis": [
+          {
+            "labelColor": { "solid": { "color": "#93A2B3" } },
+            "gridlineColor": { "solid": { "color": "#263140" } },
+            "axisColor": { "solid": { "color": "#263140" } }
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": { "solid": { "color": "#93A2B3" } },
+            "gridlineColor": { "solid": { "color": "#263140" } },
+            "axisColor": { "solid": { "color": "#263140" } }
+          }
+        ],
+        "legend": [{ "labelColor": { "solid": { "color": "#E7EDF3" } }, "fontSize": 10 }],
+        "labels": [{ "color": { "solid": { "color": "#E7EDF3" } }, "fontSize": 10 }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#E7EDF3" } }, "fontSize": 26 }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#5D6B7C" } }, "fontSize": 11 }]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "columnHeaders": [
+          {
+            "fontColor": { "solid": { "color": "#5D6B7C" } },
+            "backColor": { "solid": { "color": "#131A22" } },
+            "fontSize": 10
+          }
+        ],
+        "values": [
+          {
+            "fontColorPrimary": { "solid": { "color": "#93A2B3" } },
+            "backColorPrimary": { "solid": { "color": "#131A22" } },
+            "backColorSecondary": { "solid": { "color": "#182029" } },
+            "fontSize": 10
+          }
+        ]
+      }
+    }
+  }
+}

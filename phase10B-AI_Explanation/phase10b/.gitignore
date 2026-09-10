@@ -1,0 +1,10 @@
+# Never commit real secrets -- only .env.example should ever be committed.
+.env
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS
+.DS_Store
